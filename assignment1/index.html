@@ -1,0 +1,70 @@
+<html>
+  <head>
+  	<link rel="stylesheet" href="phone.css">
+    <title>Marissa Tracy Assignment 1</title>
+  </head>
+  <body>
+  	<div id = "tab_bar">
+  		<button type="button" id = "dialer" class = "nav"> Dialer </button>
+  		<button type="button" id = "contact" class = "nav"> Contact List </button>
+  		<button type="button" id = "add" class = "nav"> Add Contact</button>
+  	</div>
+
+  	<div id = "content">
+  		<div id = "content_dialer"> 
+  			<h2 style="font-family:verdana;"> Dialer </h2>
+  			<input type="text" name="dialerinput" class = "input">
+	  		<div id = "top">
+		  		<button type="button" id = "dialer" class = "dialbutton"> 1 </button>
+		  		<button type="button" id = "contact" class = "dialbutton"> 2 </button>
+		  		<button type="button" id = "add" class = "dialbutton"> 3</button>
+		  	</div>
+
+		  	<div id = "second">
+		  		<button type="button" id = "dialer" class = "dialbutton"> 4 </button>
+		  		<button type="button" id = "contact" class = "dialbutton"> 5 </button>
+		  		<button type="button" id = "add" class = "dialbutton"> 6 </button>
+		  	</div>
+
+		  	<div id = "third">
+		  		<button type="button" id = "dialer" class = "dialbutton"> 7 </button>
+		  		<button type="button" id = "contact" class = "dialbutton"> 8 </button>
+		  		<button type="button" id = "add" class = "dialbutton"> 9 </button>
+		  	</div>
+
+		  	<div id = "bottom">
+		  		<button type="button" id = "dialer" class = "dialbutton"> * </button>
+		  		<button type="button" id = "contact" class = "dialbutton"> 0 </button>
+		  		<button type="button" id = "add" class = "dialbutton"> # </button>
+		  	</div>
+
+		  	<div id = "wordbutton">
+		  		<button type="button" id = "dialer" class = "wordbutton"> Dial </button>
+		  		<button type="button" id = "contact" class = "wordbutton"> Clear </button>
+		  	</div>
+  		</div>
+  		
+  		<div id = "content_list"> 
+	  		<h2 style="font-family:verdana;"> Contact List </h2>		
+	  		<button type="button" id = "dialer" class = "contact"> Story Kiser </button>
+	  		<button type="button" id = "dialer" class = "contact"> Mehul Patel </button>
+	  		<button type="button" id = "dialer" class = "contact"> Devon Soto </button>
+  		</div>
+  		
+  		<div id = "content_add"> 
+  		<h2 style="font-family:verdana;"> Add Contact </h2>
+  			<font size="4" style="font-family:verdana;"> Name </font><br>
+			<input type="text" placeholder = "Marissa Tracy" class = "addcontact"><br><br>
+			<font size="4" style="font-family:verdana;"> Phone Number </font><br>
+			<input type="text" placeholder = "123-456-7890" class = "addcontact"> <br><br>
+			<font size="4" style="font-family:verdana;">Email Address </font><br>
+			<input type="text" placeholder = "marissa.tracy@colorado.edu" class = "addcontact" ><br><br>
+			<input type="submit" value = "Add Contact" class = "addcontactbutton">
+  			<input type="reset" value = "Clear" class = "addcontactbutton">
+  		</div>
+  	</div>
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="phone.js"></script>
+  </body>
+</html>
