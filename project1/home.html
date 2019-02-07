@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+  	<link rel="stylesheet" href="monster.css">
+    <title> </title>
+    <style> 
+		body {
+			background-color: #e6e6ff 
+		}
+	</style>
+  </head>
+  <body>
+ 	<div>
+ 		<button type="button" id = "lets_go_home" class = "nav"> Home </button>
+  		<button type="button" id = "lets_go_to_name_nav" class = "nav"> Name </button>
+  		<button type="button" id = "lets_go_to_body_nav" class = "nav"> Body</button>
+  		<button type="button" id = "lets_go_to_clothes_nav" class = "nav"> Clothes</button>
+ 	</div>
+  	<div id = "content" role = "main">
+  		<div id = "welcome_page" aria-live = "polite"> 
+  			<h1> WELCOME! </h1>
+  			<button id = "lets_go_to_name" class = "nav"> Let's Go!</button>
+  		</div>
+  		
+  		<div id = "choose_name" aria-live = "polite"> 
+	  		<h1> CHOOSE A NAME </h1>
+	  		<button id = "lets_go_to_body" class = "nav"> What do I look like?</button>
+  		</div>
+  		
+  		<div id = "choose_body" aria-live = "polite"> 
+  			<h1> CHOOSE A BODY </h1>
+  			<button id = "lets_go_to_clothes" class = "nav">Let's get dressed</button>
+  		</div>
+
+  		<div id = "choose_clothes" aria-live = "polite"> 
+  			<h1> CHOOSE SOME CLOTHES </h1>
+  		</div>
+  	</div>
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="monster.js"></script>
+  </body>
+</html>
