@@ -3,38 +3,54 @@
   	<link rel="stylesheet" href="monster.css">
     <title> </title>
     <style> 
+    	/*set background color*/
 		body {
-			background-color: #e6e6ff 
+			background-color: #ffeffc 
 		}
 	</style>
   </head>
   <body>
- 	<div>
+  	<!-- Navigation bar -->
+ 	<div align = "center">
  		<button type="button" id = "lets_go_home" class = "nav"> Home </button>
-  		<button type="button" id = "lets_go_to_name_nav" class = "nav"> Name </button>
-  		<button type="button" id = "lets_go_to_body_nav" class = "nav"> Body</button>
+  		<button type="button" id = "lets_go_to_name_nav" class = "nav"> Basic Information </button>
+  		<button type="button" id = "lets_go_to_body_nav" class = "nav"> Appearance</button>
   		<button type="button" id = "lets_go_to_clothes_nav" class = "nav"> Clothes</button>
  	</div>
+
   	<div id = "content" role = "main">
+  		<!-- Welcome Page -->
   		<div id = "welcome_page" aria-live = "polite"> 
-  			<h1> WELCOME! </h1>
-  			<button id = "lets_go_to_name" class = "nav"> Let's Go!</button>
+  			<h1 align = "center"> Welcome </h1>
+  			<button id = "lets_go_to_name" class = "next"> Let's Go!</button>
   		</div>
   		
+  		<!-- Basic Information -->
   		<div id = "choose_name" aria-live = "polite"> 
-	  		<h1> CHOOSE A NAME </h1>
-	  		<button id = "lets_go_to_body" class = "nav"> What do I look like?</button>
+	  		<h1 align = "center"> Basic Information </h1>
+	  		<button id = "lets_go_to_body" class = "next"> What do I look like?</button>
   		</div>
   		
+  		<!-- Body Type -->
   		<div id = "choose_body" aria-live = "polite"> 
-  			<h1> CHOOSE A BODY </h1>
-  			<button id = "lets_go_to_clothes" class = "nav">Let's get dressed</button>
+  			<h1 align = "center"> Appearance </h1>
+  			<button id = "lets_go_to_clothes" class = "next">Let's get dressed</button>
   		</div>
 
+  		<!-- Clothes -->
   		<div id = "choose_clothes" aria-live = "polite"> 
-  			<h1> CHOOSE SOME CLOTHES </h1>
+  			<h1 align = "center"> Clothing </h1>
+  			<button id = "done_button" class = "next">I'm all done! </button>
+  		</div>
+
+  		<!-- Finished page -->
+  		<div id = "start_over_page" aria-live = "polite"> 
+  			<h1 align = "center"> All done! </h1>
+  			<button id = "start_over" class = "next"> Start Over </button>
   		</div>
   	</div>
+
+  	
 
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="monster.js"></script>

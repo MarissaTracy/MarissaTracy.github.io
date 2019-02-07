@@ -1,8 +1,20 @@
+/*Navigation bar buttons*/
 .nav { 
-	width: 200px; 
-	height: 60px; 
+	width: 250px; 
+	height: 40px; 
 	background: lightgreen; 
 	color: black; 
 	margin: 5px;
 	font-size: 25px;
+	border-radius: 20px;
+}
+/*Next button on page*/
+.next { 
+	display: inline-block; 
+	background: lightgreen; 
+	text-align: center;
+	color: black; 
+	margin: 5px;
+	font-size: 25px;
+	border-radius: 10px;
 }
