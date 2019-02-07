@@ -1,0 +1,182 @@
+<html>
+  <head>
+  	<link rel="stylesheet" href="phone.css">
+    <title>Marissa Tracy Assignment 3</title>
+  </head>
+  <body>
+  	<div id = "tab_bar">
+  		<button type="button" id = "dialer" class = "nav" accesskey="d"> Dialer </button>
+  		<button type="button" id = "contact" class = "nav" accesskey="l"> Contact List </button>
+  		<button type="button" id = "add" class = "nav" accesskey="a"> Add Contact</button>
+  		<button type="button" id = "help" class = "nav" accesskey="h"> Help</button>
+  	</div>
+
+  	<div id = "content" roll = "main">
+  		<div id = "content_dialer"> 
+  			<h2 style="font-family:verdana;"> Dialer </h2>
+  			<form>
+  				<input type="text" name="dialerinput" class = "input">
+  			</form>
+	  		<div id = "top">
+		  		<button type="button" id = "dialer" class = "dialbutton" accesskey="1"> 1 </button>
+		  		<button type="button" id = "contact" class = "dialbutton" accesskey="2"> 2 </button>
+		  		<button type="button" id = "add" class = "dialbutton" accesskey="3"> 3</button>
+		  	</div>
+
+		  	<div id = "second">
+		  		<button type="button" id = "dialer" class = "dialbutton" accesskey="4"> 4 </button>
+		  		<button type="button" id = "contact" class = "dialbutton" accesskey="5"> 5 </button>
+		  		<button type="button" id = "add" class = "dialbutton" accesskey="6"> 6 </button>
+		  	</div>
+
+		  	<div id = "third">
+		  		<button type="button" id = "dialer" class = "dialbutton" accesskey="7"> 7 </button>
+		  		<button type="button" id = "contact" class = "dialbutton" accesskey="8"> 8 </button>
+		  		<button type="button" id = "add" class = "dialbutton" accesskey="9"> 9 </button>
+		  	</div>
+
+		  	<div id = "bottom">
+		  		<button type="button" id = "dialer" class = "dialbutton" accesskey="s"> * </button>
+		  		<button type="button" id = "contact" class = "dialbutton" accesskey="0"> 0 </button>
+		  		<button type="button" id = "add" class = "dialbutton" accesskey="p"> # </button>
+		  	</div>
+
+		  	<div id = "wordbutton">
+		  		<button type="button" id = "dialer" class = "wordbutton" accesskey="q"> Dial </button>
+		  		<button type="button" id = "contact" class = "wordbutton" accesskey="c"> Clear </button>
+		  	</div>
+  		</div>
+  		
+  		<div id = "content_list" > 
+	  		<h2 style="font-family:verdana;"> Contact List </h2>		
+	  		<table style="width:80%" class = "contacttable">
+	  			<tr align="left">
+	  				<th> Picture </th>
+		  			<th> First Name </th>
+		  			<th> Last Name </th>
+		  			<th> Phone Number </th>
+		  			<th> Email Address </th>
+		  		</tr>
+		  	<tr>
+		  		<td> <img src="Story.JPG" alt="Story's face @ work" border=3 height=100 width=100></img> </td>
+		  		<td> Story </td>
+		  		<td> Kiser </td>
+		  		<td> <a href = "tel:+1-123-456-7890"> 123-456-7890 </td>
+		  		<td> <a href = "mailto:story.kiser@colorado.edu"> Story.Kiser@colorado.edu </td>
+		  	</tr>
+		  	<tr>
+		  		<td> <img src="Mehul.PNG" alt="Mehul playing water polo" border=3 height=100 width=100></img> </td>
+		  		<td> Mehul </td>
+		  		<td> Patel </td>
+		  		<td> <a href = "tel:+1-111-222-3333"> 111-222-3333 </td>
+		  		<td> <a href = "mailto:mehul.patel@colorado.edu">Mehul.Patel@colorado.edu </td>
+		  	</tr>
+		  	
+
+	  		</table>
+  		</div>
+  		
+  		<div id = "content_add"> 
+  		<h2 style="font-family:verdana;"> Add Contact </h2>
+  			<font size="4" style="font-family:verdana;"> Name </font><br>
+			<input type="text" placeholder = "Marissa Tracy" class = "addcontact"><br><br>
+			<font size="4" style="font-family:verdana;"> Phone Number </font><br>
+			<input type="text" placeholder = "123-456-7890" class = "addcontact"> <br><br>
+			<font size="4" style="font-family:verdana;">Email Address </font><br>
+			<input type="text" placeholder = "marissa.tracy@colorado.edu" class = "addcontact" ><br><br>
+			<input type="submit" value = "Add Contact" class = "addcontactbutton">
+  			<input type="reset" value = "Clear" class = "addcontactbutton">
+  		</div>
+  		<div id = "content_help"> 
+  			<h2 style="font-family:verdana;"> Help </h2>	
+  			<table style="width:60%" class = "helptable">
+	  			<tr align="left">
+		  			<th> Function </th>
+		  			<th> Mac Keyboard Shortcut </th>
+		  		</tr>
+		  		<tr>
+		  			<td> Dialer Page </td>
+		  			<td> control + option + d</td>
+		  		</tr>
+		  		<tr>
+		  			<td> Contact List </td>
+		  			<td> control + option + l</td>
+		  		</tr>
+		  		<tr>
+		  			<td> Add Contact </td>
+		  			<td> control + option + a</td>
+		  		</tr>
+		  		<tr>
+		  			<td> Help </td>
+		  			<td> control + option + h</td>
+		  		</tr>
+		  		</tr>
+		  		<tr align="left">
+		  			<th> Dialer Controls </th>
+		  		</tr>
+		  		<tr>
+		  			<td> 0 </td>
+		  			<td> control + option + 0 </td>
+		  		</tr>
+		  		<tr>
+		  			<td> 1 </td>
+		  			<td> control + option + 1 </td>
+		  		</tr>
+		  		<tr>
+		  			<td> 2 </td>
+		  			<td> control + option + 2 </td>
+		  		</tr>
+		  		<tr>
+		  			<td> 3 </td>
+		  			<td> control + option + 3 </td>
+		  		</tr>
+		  		<tr>
+		  			<td> 4 </td>
+		  			<td> control + option + 4 </td>
+		  		</tr>
+		  		<tr>
+		  			<td> 5 </td>
+		  			<td> control + option + 5 </td>
+		  		</tr>
+		  		<tr>
+		  			<td> 6 </td>
+		  			<td> control + option + 6 </td>
+		  		</tr>
+		  		<tr>
+		  			<td> 7 </td>
+		  			<td> control + option + 7 </td>
+		  		</tr>
+		  		<tr>
+		  			<td> 8 </td>
+		  			<td> control + option + 8 </td>
+		  		</tr>
+		  		<tr>
+		  			<td> 9 </td>
+		  			<td> control + option + 9 </td>
+		  		</tr>
+		  		<tr>
+		  			<td> Star (*) </td>
+		  			<td> control + option + s </td>
+		  		</tr>
+		  		<tr>
+		  			<td> Pound Sign (#) </td>
+		  			<td> control + option + p </td>
+		  		</tr>
+		  		<tr>
+		  			<td>  Clear Button </td>
+		  			<td> control + option + c </td>
+		  		</tr>
+		  		<tr>
+		  			<td> Dial Button </td>
+		  			<td> control + option + q </td>
+		  		</tr>
+
+
+	  		</table>
+  		</div>
+  	</div>
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="phone.js"></script>
+  </body>
+</html>
