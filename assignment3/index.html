@@ -1,18 +1,18 @@
-<html>
+<html lang="en">
   <head>
   	<link rel="stylesheet" href="phone.css">
     <title>Marissa Tracy Assignment 3</title>
   </head>
   <body>
-  	<div id = "tab_bar">
+  	<div id = "tab_bar" role = "navigation">
   		<button type="button" id = "dialer" class = "nav" accesskey="d"> Dialer </button>
   		<button type="button" id = "contact" class = "nav" accesskey="l"> Contact List </button>
   		<button type="button" id = "add" class = "nav" accesskey="a"> Add Contact</button>
   		<button type="button" id = "help" class = "nav" accesskey="h"> Help</button>
   	</div>
 
-  	<div id = "content" roll = "main">
-  		<div id = "content_dialer"> 
+  	<div id = "content" role = "main">
+  		<div id = "content_dialer" aria-live = "polite"> 
   			<h2 style="font-family:verdana;"> Dialer </h2>
   			<form>
   				<input type="text" name="dialerinput" class = "input">
@@ -47,7 +47,7 @@
 		  	</div>
   		</div>
   		
-  		<div id = "content_list" > 
+  		<div id = "content_list" aria-live = "polite"> 
 	  		<h2 style="font-family:verdana;"> Contact List </h2>		
 	  		<table style="width:80%" class = "contacttable">
 	  			<tr align="left">
@@ -76,7 +76,7 @@
 	  		</table>
   		</div>
   		
-  		<div id = "content_add"> 
+  		<div id = "content_add" aria-live = "polite"> 
   		<h2 style="font-family:verdana;"> Add Contact </h2>
   			<font size="4" style="font-family:verdana;"> Name </font><br>
 			<input type="text" placeholder = "Marissa Tracy" class = "addcontact"><br><br>
@@ -87,8 +87,12 @@
 			<input type="submit" value = "Add Contact" class = "addcontactbutton">
   			<input type="reset" value = "Clear" class = "addcontactbutton">
   		</div>
-  		<div id = "content_help"> 
+  		<div id = "content_help" aria-live = "polite"> 
   			<h2 style="font-family:verdana;"> Help </h2>	
+  			<h3> 
+  				Dog picture is something that I screenshotted a long time ago and have had on my phone ever since, original source unknown.  <br>Alien
+  				picture is a screenshot of a sticker from the RIPNDIP iOS keyboard.
+  			</h3>
   			<table style="width:60%" class = "helptable">
 	  			<tr align="left">
 		  			<th> Function </th>
