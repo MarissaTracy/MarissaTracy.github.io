@@ -15,7 +15,7 @@
   		<div id = "content_dialer" aria-live = "polite"> 
   			<h2 style="font-family:verdana;"> Dialer </h2>
   			<form>
-  				<input type="text" name="dialerinput" class = "input">
+  				<input type="text" id="dialerinput" class = "input" label = "textarea">
   			</form>
 	  		<div id = "top">
 		  		<button type="button" id = "dialer" class = "dialbutton" accesskey="1"> 1 </button>
@@ -42,8 +42,8 @@
 		  	</div>
 
 		  	<div id = "wordbutton">
-		  		<button type="button" id = "dialer" class = "wordbutton" accesskey="q"> Dial </button>
-		  		<button type="button" id = "contact" class = "wordbutton" accesskey="c"> Clear </button>
+		  		<button type="button" id = "dial_button" class = "wordbutton" accesskey="q"> Dial </button>
+		  		<button type="button" id = "clear_button" class = "wordbutton" accesskey="c"> Clear </button>
 		  	</div>
   		</div>
   		
@@ -79,13 +79,13 @@
   		<div id = "content_add" aria-live = "polite"> 
   		<h2 style="font-family:verdana;"> Add Contact </h2>
   			<font size="4" style="font-family:verdana;"> Name </font><br>
-			<input type="text" placeholder = "Marissa Tracy" class = "addcontact"><br><br>
+			<input type="text" placeholder = "Marissa Tracy" class = "addcontact" label = "textarea"><br><br>
 			<font size="4" style="font-family:verdana;"> Phone Number </font><br>
-			<input type="text" placeholder = "123-456-7890" class = "addcontact"> <br><br>
-			<font size="4" style="font-family:verdana;">Email Address </font><br>
-			<input type="text" placeholder = "marissa.tracy@colorado.edu" class = "addcontact" ><br><br>
+			<input type="text" placeholder = "123-456-7890" class = "addcontact" label = "textarea"> <br><br>
+			<font size="4" style="font-family:verdana;" >Email Address </font><br>
+			<input type="text" placeholder = "marissa.tracy@colorado.edu" class = "addcontact" label = "textarea" ><br><br>
 			<input type="submit" value = "Add Contact" class = "addcontactbutton">
-  			<input type="reset" value = "Clear" class = "addcontactbutton">
+  			<input type="reset" value = "Clear" class = "addcontactbutton" label = "textarea" id = "clear_box">
   		</div>
   		<div id = "content_help" aria-live = "polite"> 
   			<h2 style="font-family:verdana;"> Help </h2>	

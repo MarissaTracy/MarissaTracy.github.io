@@ -34,9 +34,17 @@ $("#help").click(function() {
 	$("#content_list").hide();
 });
 
-// $("#add").keypress() { 
-// 	$("#content_add").show(); 
-// 	$("#content_dialer").hide(); 
-// 	$("#content_list").hide();
-// });
+//Put numbers into box, from A1 solutions
+$("#content_dialer button").click(function() {
+	$("#dialerinput").val($("#dialerinput").val() + this.innerText);
+});
+
+//clear box, from A1 solutions
+$("#clear_button").click(function() {
+	$("#dialerinput").val("");
+});
+
+$("#dial_button").click(function() {
+	$("#dialerinput") + "";
+});
 
