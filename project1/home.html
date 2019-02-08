@@ -163,8 +163,65 @@
   		<!-- Body Type -->
   		<div id = "choose_body" aria-live = "polite"> 
   			<h1 align = "center"> Appearance </h1>
+			<h2 align = "center"> Body Type (click the arrows to cycle) </h2>
+			<!-- button icon: https://commons.wikimedia.org/wiki/File:Chevron_right_font_awesome.svg -->
+			
+			<form style="position:absolute;left:300px;bottom:300">
+				<input type="image" src="arrow_left.png" id="body_arrow_left" placeholder="making chocolate milk" width="50" height="50">
+			</form>
+			
+			<form style="position:absolute;left:930px;bottom:300">
+				<input type="image" src="arrow_right.png" id="body_arrow_right" placeholder="making chocolate milk" width="50" height="50">
+			</form>
+			
   			<button id = "lets_go_to_clothes" class = "next">Let's get dressed >></button>
-  		</div>
+		 <form style="position:absolute;left:50px">
+			
+			<h2 align = "center"> Number of Limbs </h2>
+			<p>
+				<input type="radio" id="1">
+				<label for="1">one</label>
+			</p>
+			<p>
+				<input type="radio" id="2">
+				<label for="2">two</label>
+			</p>
+			<p>
+				<input type="radio" id="3">
+				<label for="3">three</label>
+			</p>
+			<p>
+				<input type="radio" id="4">
+				<label for="4">four</label>
+			</p>
+		</form>
+		 <form style="position:absolute;left:1050px">
+			
+			<h2 align = "center"> Facial Features </h2>
+			<p>
+				<input type="checkbox" id="eye">
+				<label for="eye">eye (1)</label>
+			</p>
+			<p>
+				<input type="checkbox" id="eye_2">
+				<label for="eye_2">eyes (2)</label>
+			</p>
+			<p>
+				<input type="checkbox" id="mouth">
+				<label for="mouth">mouth</label>
+			</p>
+			<p>
+				<input type="checkbox" id="nose">
+				<label for="nose">nose</label>
+			</p>
+			<p>
+				<input type="checkbox" id="ears">
+				<label for="ears">ears</label>
+			</p>
+		</form>
+		
+		</div>
+	
 
   		<!-- Clothes -->
   		<div id = "choose_clothes" aria-live = "polite"> 
