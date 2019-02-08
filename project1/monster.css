@@ -3,18 +3,37 @@
 	width: 250px; 
 	height: 40px; 
 	background: lightgreen; 
-	color: black; 
+	color: darkgreen; 
 	margin: 5px;
 	font-size: 25px;
 	border-radius: 20px;
+	font-family: "Verdana", Sans-serif;
 }
 /*Next button on page*/
 .next { 
 	display: inline-block; 
 	background: lightgreen; 
 	text-align: center;
-	color: black; 
+	color: darkgreen; 
 	margin: 5px;
 	font-size: 25px;
 	border-radius: 10px;
+	font-family: "Verdana", Sans-serif;
+	position: absolute;
+	bottom: 100px;
+	left: 800px;
 }
+
+p {color: grey; font-family: "Verdana", Sans-serif;}
+
+input {color: grey; font-family: "Verdana", Sans-serif;}
+
+h2 {color: hotpink; font-family: "Verdana", Sans-serif;}
+
+h1 {color: black;font-family: "Verdana", Sans-serif;}
+
+form {
+	font-family: "Verdana", Sans-serif;
+}
+
+
