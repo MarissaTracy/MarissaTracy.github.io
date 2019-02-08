@@ -22,37 +22,89 @@
   		<!-- Welcome Page -->
   		<div id = "welcome_page" aria-live = "polite"> 
   			<h1 align = "center"> Welcome </h1>
-  			<button id = "lets_go_to_name" class = "next"> Let's Go!</button>
+  			<button id = "lets_go_to_name" class = "next"> Let's Go! >></button>
   		</div>
   		
   		<!-- Basic Information -->
   		<div id = "choose_name" aria-live = "polite"> 
 	  		<h1 align = "center"> Basic Information </h1>
-			 <form>
-  				<input type="radio" name="gender" value="male"> Male<br>
-  				<input type="radio" name="gender" value="female"> Female<br>
-  				<input type="radio" name="gender" value="nonbinary"> Nonbinary<br>
-				<input type="text" name="gender" value="other"> Other
+			 <form style="position:absolute;left:50px">
+	   			  <h2> Name </h2>
+				  <p>
+	   			  <label for="name1">First Name: </label>
+	   			  <input id="name1" placeholder="mitzy">
+	   		  	  </p>
+				  <p>
+	   			  <label for="name2">Family Name: </label>
+	   			  <input id="name2" placeholder="bubbles">
+	   		  	  </p>
+			 </form>	 
+			 <form style="position:absolute;left:380px">
+  				<h2> Gender </h2>
+				<p>
+					<input type="radio" id="male">
+					<label for="male">Male</label>
+				</p>
+				<p>
+  					<input type="radio" id="female">
+					<label for="female">Female</label>
+				</p>
+				<p>
+  					<input type="radio" id="nonbinary">
+					<label for="nonbinary">Nonbinary</label>
+				</p>
+				<p>
+					<label for="other">Other: </label>
+					<input type="text" id="other" placeholder="other">
+				</p>
 			</form> 
-			<form>
-  				<input type="radio" name="pronouns" value="he"> he/him/his<br>
-  				<input type="radio" name="pronouns" value="she"> she/her/hers<br>
-  				<input type="radio" name="pronouns" value="they"> they/them/theirs<br>
-				<input type="text" name="pronouns" value="other"> Other
-			</form> 
-	  		<button id = "lets_go_to_body" class = "next"> What do I look like?</button>
+			 <form style="position:absolute;left:670px">
+  				<h2> Pronouns </h2>
+				<p>
+					<input type="radio" id="he">
+					<label for="he">he/him/his</label>
+				</p>
+				<p>
+  					<input type="radio" id="she">
+					<label for="she">she/her/hers</label>
+				</p>
+				<p>
+  					<input type="radio" id="they">
+					<label for="they">they/them/theirs</label>
+				</p>
+				<p>
+					<label for="other">Other: </label>
+					<input type="text" id="other" placeholder="other">
+				</p>
+			</form>
+			<form style="position:absolute;left:950px">
+			  <h2> Personality </h2>
+			  <p>
+			  	<label for="hobby">Favorite Hobby: </label>
+			  	<input id="hobby" placeholder="video games">
+		  	  </p>
+			  <p>
+			  <label for="food">Favorite Food: </label>
+			  <input id="food" placeholder="ice cream">
+		  	  </p>
+			  <p>
+			  <label for="skill">Special Skill: </label>
+			  <input id="skill" placeholder="making chocolate milk">
+		  	  </p>
+			</form>
+	  		<button id = "lets_go_to_body" class = "next"> What do I look like? >></button>
   		</div>
   		
   		<!-- Body Type -->
   		<div id = "choose_body" aria-live = "polite"> 
   			<h1 align = "center"> Appearance </h1>
-  			<button id = "lets_go_to_clothes" class = "next">Let's get dressed</button>
+  			<button id = "lets_go_to_clothes" class = "next">Let's get dressed >></button>
   		</div>
 
   		<!-- Clothes -->
   		<div id = "choose_clothes" aria-live = "polite"> 
   			<h1 align = "center"> Clothing </h1>
-  			<button id = "done_button" class = "next">I'm all done! </button>
+  			<button id = "done_button" class = "next">I'm all done!</button>
   		</div>
 
   		<!-- Finished page -->
