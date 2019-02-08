@@ -86,7 +86,5 @@ $("#done_button").click(function() {
 	$("#choose_body").hide();
 	$("#choose_clothes").hide();
 	$("#choose_name").hide();
-
-
 });
 

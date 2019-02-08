@@ -7,6 +7,60 @@
 		body {
 			background-color: #ffeffc 
 		}
+		/*Example shapes for image on first page*/
+		.examplesquare {
+		      width: 400px;
+		      height: 400px;
+		      background: lightblue;
+		      position: absolute;
+		      top: 25%;
+	      	  left: 37%;
+		 }
+		.exampleoval{
+	      width: 250px;
+	      height: 150px;
+	      background: black;
+	      border-radius: 100px / 50px;
+	      position: absolute;
+	      top: 38%;
+	      left: 43%;
+    	}
+    	.examplecircle1 {
+	      width: 65px;
+	      height: 70px;
+	      background: white;
+	      border-radius: 50%;
+	      position: absolute;
+	      top: 45%;
+	      left: 47%;
+	    }
+	    .examplecircle2 {
+	      width: 65px;
+	      height: 70px;
+	      background: white;
+	      border-radius: 50%;
+	      position: absolute;
+	      top: 45%;
+	      left: 51%;
+	    }
+	    .examplecircle3 {
+	      width: 25px;
+	      height: 35px;
+	      background: black;
+	      border-radius: 50%;
+	      position: absolute;
+	      top: 48%;
+	      left: 52%;
+	    }
+	    .examplecircle4 {
+	      width: 25px;
+	      height: 35px;
+	      background: black;
+	      border-radius: 50%;
+	      position: absolute;
+	      top: 48%;
+	      left: 49%;
+	    }
 	</style>
   </head>
   <body>
@@ -21,7 +75,16 @@
   	<div id = "content" role = "main">
   		<!-- Welcome Page -->
   		<div id = "welcome_page" aria-live = "polite"> 
-  			<h1 align = "center"> Welcome </h1>
+  			<h1 align = "center"> Welcome to character box! </h1>
+  			<p style="font-size:20px;" align="center"> Ready to unbox your character?</p>
+  			<div>
+  			<object class="examplesquare" align="center"></object>
+  			<object class="exampleoval" align="center"></object>
+  			<object class="examplecircle1" align="center"></object>
+  			<object class="examplecircle2" align="center"></object>
+  			<object class="examplecircle3" align="center"></object>
+  			<object class="examplecircle4" align="center"></object>
+  			</div>
   			<button id = "lets_go_to_name" class = "next"> Let's Go! >></button>
   		</div>
   		
