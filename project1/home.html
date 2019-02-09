@@ -66,10 +66,10 @@
   <body>
   	<!-- Navigation bar -->
  	<div align = "center">
- 		<button type="button" id = "lets_go_home" class = "nav"> Home </button>
-  		<button type="button" id = "lets_go_to_name_nav" class = "nav"> Basic Information </button>
-  		<button type="button" id = "lets_go_to_body_nav" class = "nav"> Appearance</button>
-  		<button type="button" id = "lets_go_to_clothes_nav" class = "nav"> Clothes</button>
+ 		<button type="button" id = "lets_go_home" class = "nav" accesskey="h"> Home </button>
+  		<button type="button" id = "lets_go_to_name_nav" class = "nav" accesskey="b"> Basic Information </button>
+  		<button type="button" id = "lets_go_to_body_nav" class = "nav" accesskey="a"> Appearance</button>
+  		<button type="button" id = "lets_go_to_clothes_nav" class = "nav" accesskey="c"> Clothes</button>
  	</div>
 
   	<div id = "content" role = "main">
@@ -167,14 +167,15 @@
 			<!-- button icon: https://commons.wikimedia.org/wiki/File:Chevron_right_font_awesome.svg -->
 			
 			<form style="position:absolute;left:300px;bottom:300">
-				<input type="image" src="arrow_left.png" id="body_arrow_left" placeholder="making chocolate milk" width="50" height="50">
+				<input type="image" src="arrow_left.png" id="body_arrow_left" width="50" height="50">
 			</form>
 			
 			<form style="position:absolute;left:930px;bottom:300">
-				<input type="image" src="arrow_right.png" id="body_arrow_right" placeholder="making chocolate milk" width="50" height="50">
+				<input type="image" src="arrow_right.png" id="body_arrow_right" width="50" height="50">
 			</form>
 			
-  			<button id = "lets_go_to_clothes" class = "next">Let's get dressed >></button>
+  			<button id = "lets_go_to_clothes" class = "next">Let's get dressed >> </button>
+  			<button id = "back_to_basic" class = "back"> << Back </button>
 		 <form style="position:absolute;left:50px">
 			
 			<h2 align = "center"> Number of Limbs </h2>
@@ -226,13 +227,51 @@
   		<!-- Clothes -->
   		<div id = "choose_clothes" aria-live = "polite"> 
   			<h1 align = "center"> Clothing </h1>
-  			<button id = "done_button" class = "next">I'm all done!</button>
+  			<button id = "back_to_body" class = "back"> << Back </button>
+  			<button id = "done_button" class = "next" accesskey="d">I'm all done!</button>
   		</div>
 
   		<!-- Finished page -->
   		<div id = "start_over_page" aria-live = "polite"> 
   			<h1 align = "center"> All done! </h1>
   			<button id = "start_over" class = "next"> Start Over </button>
+  		</div>
+
+  		<button id = "help" accesskey="/">?</button>
+  		<div id = "help_page">
+
+  		<table style="width:60%">
+		  <tr>
+		    <th>Page</th>
+		    <th>Mac Keyboard Shortcut</th> 
+		  </tr>
+		  <tr>
+		    <td>Homepage</td>
+		    <td>control + alt + h</td>
+		  </tr>
+		  <tr>
+		    <td>Basic Information</td>
+		    <td>control + alt + b</td>
+		  </tr>
+		  <tr>
+		    <td>Appearance</td>
+		    <td>control + alt + a </td>
+		  </tr>
+		  <tr>
+		    <td>Clothes</td>
+		    <td>control + alt + c</td>
+		  </tr>
+		  <tr>
+		    <td>Done Page</td>
+		    <td>control + alt + d</td>
+		  </tr>
+		  <tr>
+		    <td>Help Page</td>
+		    <td>control + alt + /</td>
+		  </tr>
+
+		</table>
+  			
   		</div>
   	</div>
 

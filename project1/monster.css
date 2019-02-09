@@ -21,7 +21,38 @@
 	font-family: "Verdana", Sans-serif;
 	position: absolute;
 	bottom: 100px;
-	left: 800px;
+	left: 850px;
+}
+
+/*Back button on page*/
+.back { 
+	display: inline-block; 
+	background: lightgreen; 
+	text-align: center;
+	color: darkgreen; 
+	margin: 5px;
+	font-size: 25px;
+	border-radius: 10px;
+	font-family: "Verdana", Sans-serif;
+	position: absolute;
+	bottom: 100px;
+	left: 300px;
+}
+/*Help Button*/
+#help { 
+	display: inline-block; 
+	background: lightgreen; 
+	text-align: center;
+	color: darkgreen; 
+	margin: 5px;
+	font-size: 25px;
+	border-radius: 25px;
+	font-family: "Verdana", Sans-serif;
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	top: 10px;
+	left: 30px;
 }
 
 p {color: grey; font-family: "Verdana", Sans-serif;}
@@ -34,6 +65,13 @@ h1 {color: black;font-family: "Verdana", Sans-serif;}
 
 form {
 	font-family: "Verdana", Sans-serif;
+}
+
+table {
+	font-family: "Verdana", Sans-serif;
+	color: black;
+	font-family: "Verdana", Sans-serif;
+	text-align: left;
 }
 
 
