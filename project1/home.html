@@ -7,60 +7,7 @@
 		body {
 			background-color: #ffeffc 
 		}
-		/*Example shapes for image on first page*/
-		.examplesquare {
-		      width: 400px;
-		      height: 400px;
-		      background: lightblue;
-		      position: absolute;
-		      top: 25%;
-	      	  left: 37%;
-		 }
-		.exampleoval{
-	      width: 250px;
-	      height: 150px;
-	      background: black;
-	      border-radius: 100px / 50px;
-	      position: absolute;
-	      top: 38%;
-	      left: 43%;
-    	}
-    	.examplecircle1 {
-	      width: 65px;
-	      height: 70px;
-	      background: white;
-	      border-radius: 50%;
-	      position: absolute;
-	      top: 45%;
-	      left: 47%;
-	    }
-	    .examplecircle2 {
-	      width: 65px;
-	      height: 70px;
-	      background: white;
-	      border-radius: 50%;
-	      position: absolute;
-	      top: 45%;
-	      left: 51%;
-	    }
-	    .examplecircle3 {
-	      width: 25px;
-	      height: 35px;
-	      background: black;
-	      border-radius: 50%;
-	      position: absolute;
-	      top: 48%;
-	      left: 52%;
-	    }
-	    .examplecircle4 {
-	      width: 25px;
-	      height: 35px;
-	      background: black;
-	      border-radius: 50%;
-	      position: absolute;
-	      top: 48%;
-	      left: 49%;
-	    }
+    	
 	</style>
   </head>
   <body>
@@ -104,7 +51,7 @@
 			 </form>	 
 			 <form style="position:absolute;left:380px">
   				<h2> Gender </h2>
-				<p>
+				<!-- <p>
 					<input type="radio" id="male">
 					<label for="male">Male</label>
 				</p>
@@ -120,11 +67,27 @@
 					<input type="radio" id="other">
 					<label for="other">Other: </label>
 					<input type="text" id="other" placeholder="other">
+				</p> -->
+				<p>
+				<input type="radio" name="gender" /> Male <br/>
+				</p>
+
+				<p>
+				<input type="radio" name="gender" /> Female <br/>
+				</p>
+
+				<p>
+				<input type="radio" name="gender" /> Nonbinary <br/>
+				</p>
+
+				<p>
+				<input type="radio" name="gender" /> Other
+				<input type="text" id="other" placeholder="other">
 				</p>
 			</form> 
 			 <form style="position:absolute;left:670px">
   				<h2> Pronouns </h2>
-				<p>
+				<!-- <p>
 					<input type="radio" id="he">
 					<label for="he">he/him/his</label>
 				</p>
@@ -140,6 +103,22 @@
 					<input type="radio" id="other2">
 					<label for="other2">Other: </label>
 					<input type="text" id="other2" placeholder="other">
+				</p> -->
+				<p>
+				<input type="radio" name="pronoun" /> He/Him/His <br/>
+				</p>
+
+				<p>
+				<input type="radio" name="pronoun" /> She/Her/Hers <br/>
+				</p>
+
+				<p>
+				<input type="radio" name="pronoun" /> They/Them/Theirs <br/>
+				</p>
+
+				<p>
+				<input type="radio" name="pronoun" /> Other
+				<input type="text" id="other2" placeholder="other">
 				</p>
 			</form>
 			<form style="position:absolute;left:950px">
@@ -166,20 +145,35 @@
 			<h2 align = "center"> Body Type (click the arrows to cycle) </h2>
 			<!-- button icon: https://commons.wikimedia.org/wiki/File:Chevron_right_font_awesome.svg -->
 			
-			<form style="position:absolute;left:300px;bottom:300">
+			<!-- <form style="position:absolute;left:300px;bottom:300">
 				<input type="image" src="arrow_left.png" id="body_arrow_left" width="50" height="50">
-			</form>
+			</form> -->
 			
-			<form style="position:absolute;left:930px;bottom:300">
+			<button id="right_arrow"><img src="arrow_right.png" width="50" height="50" class = "btn" ></button>
+			<button id="left_arrow"><img src="arrow_left.png" width="50" height="50" class = "btn"></button>
+
+			<!-- <form style="position:absolute;left:930px;bottom:300">
 				<input type="image" src="arrow_right.png" id="body_arrow_right" width="50" height="50">
-			</form>
+			</form> -->
 			
   			<button id = "lets_go_to_clothes" class = "next">Let's get dressed >> </button>
   			<button id = "back_to_basic" class = "back"> << Back </button>
+
+
+  			<div id = "circle">
+				<object class="bodycircle" align="center" id = "circle"></object>
+				<object class="circlehead" align="center" id = "chead"></object>
+			</div>
+
+			<div id = "square">
+				<object class="bodysquare" align="center" id = "square"></object>
+				<object class="squarehead" align="center" id = "shead"></object>
+			</div>
+
 		 <form style="position:absolute;left:50px">
 			
 			<h2 align = "center"> Number of Limbs </h2>
-			<p>
+			<!-- <p>
 				<input type="radio" id="1">
 				<label for="1">one</label>
 			</p>
@@ -194,35 +188,53 @@
 			<p>
 				<input type="radio" id="4">
 				<label for="4">four</label>
-			</p>
+			</p> -->
+			<p>
+				<input type="radio" name="limbs" /> One (1)<br/>
+				</p>
+
+				<p>
+				<input type="radio" name="limbs" /> Two (2) <br/>
+				</p>
+
+				<p>
+				<input type="radio" name="limbs" /> Three (3) <br/>
+				</p>
+
+				<p>
+				<input type="radio" name="limbs" /> Four (4)
+				</p>
 		</form>
 		 <form style="position:absolute;left:1050px">
 			
 			<h2 align = "center"> Facial Features </h2>
 			<p>
-				<input type="checkbox" id="eye">
-				<label for="eye">eye (1)</label>
+				<input type="radio" name="eye">
+				<label for="eye">Eye (1)</label>
 			</p>
 			<p>
-				<input type="checkbox" id="eye_2">
-				<label for="eye_2">eyes (2)</label>
+				<input type="radio" name = "eye">
+				<label for="eye_2">Eyes (2)</label>
 			</p>
 			<p>
 				<input type="checkbox" id="mouth">
-				<label for="mouth">mouth</label>
+				<label for="mouth">Mouth</label>
 			</p>
 			<p>
 				<input type="checkbox" id="nose">
-				<label for="nose">nose</label>
+				<label for="nose">Nose</label>
 			</p>
 			<p>
 				<input type="checkbox" id="ears">
-				<label for="ears">ears</label>
+				<label for="ears">Ears</label>
 			</p>
 		</form>
 		
 		</div>
 	
+		<!-- <div id = "circle">
+			CIRCLE
+		</div> -->
 
   		<!-- Clothes -->
   		<div id = "choose_clothes" aria-live = "polite"> 
@@ -240,6 +252,7 @@
   		<button id = "help" accesskey="/">?</button>
   		<div id = "help_page">
 
+  		<!-- Help page -->
   		<table style="width:60%">
 		  <tr>
 		    <th>Page</th>
@@ -274,8 +287,6 @@
   			
   		</div>
   	</div>
-
-  	
 
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="monster.js"></script>

@@ -1,3 +1,95 @@
+.examplesquare {
+	width: 400px;
+	height: 400px;
+	background: lightblue;
+	position: absolute;
+	top: 25%;
+	left: 37%;
+}
+.exampleoval{
+	width: 250px;
+	height: 150px;
+	background: black;
+	border-radius: 100px / 50px;
+	position: absolute;
+	top: 38%;
+	left: 43%;
+}
+
+.examplecircle1 {
+	width: 65px;
+	height: 70px;
+	background: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 45%;
+	left: 47%;
+}
+.examplecircle2 {
+	width: 65px;
+	height: 70px;
+	background: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 45%;
+	left: 51%;
+}
+.examplecircle3 {
+	width: 25px;
+	height: 35px;
+	background: black;
+	border-radius: 50%;
+	position: absolute;
+	top: 48%;
+	left: 52%;
+}
+.examplecircle4 {
+	width: 25px;
+	height: 35px;
+	background: black;
+	border-radius: 50%;
+	position: absolute;
+	top: 48%;
+	left: 49%;
+}
+
+.bodycircle {
+	width: 160px;
+	height: 200px;
+	background: purple;
+	border-radius: 50%;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+}
+
+.bodysquare {
+	width: 160px;
+	height: 200px;
+	background: #69e56b;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+ }
+
+.circlehead {
+	width: 100px;
+	height: 100px;
+	background: #8281e2;
+	border-radius: 50%;
+	position: absolute;
+	top: 27%;
+	left: 42%;
+}
+
+.squarehead {
+	width: 100px;
+	height: 100px;
+	background: #f9bd3b;
+	position: absolute;
+	top: 27%;
+	left: 42%;
+}
 /*Navigation bar buttons*/
 .nav { 
 	width: 250px; 
@@ -74,4 +166,14 @@ table {
 	text-align: left;
 }
 
+#right_arrow {
+	position:absolute;
+	left:930px;
+	bottom: 350;
+}
 
+#left_arrow {
+	position:absolute;
+	left: 300px;
+	bottom: 350;
+}
