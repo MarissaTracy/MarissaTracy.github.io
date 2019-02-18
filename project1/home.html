@@ -7,10 +7,10 @@
 		body {
 			background-color: #ffeffc 
 		}
-    	
 	</style>
   </head>
   <body>
+
   	<!-- Navigation bar -->
  	<div align = "center">
  		<button type="button" id = "lets_go_home" class = "nav" accesskey="h"> Home </button>
@@ -19,18 +19,20 @@
   		<button type="button" id = "lets_go_to_clothes_nav" class = "nav" accesskey="c"> Clothes</button>
  	</div>
 
+ 	<!-- Main Content -->
   	<div id = "content" role = "main">
   		<!-- Welcome Page -->
   		<div id = "welcome_page" aria-live = "polite"> 
   			<h1 align = "center"> Welcome to character box! </h1>
   			<p style="font-size:20px;" align="center"> Ready to unbox your character?</p>
+  			<!-- Picture of character in box -->
   			<div>
-  			<object class="examplesquare" align="center"></object>
-  			<object class="exampleoval" align="center"></object>
-  			<object class="examplecircle1" align="center"></object>
-  			<object class="examplecircle2" align="center"></object>
-  			<object class="examplecircle3" align="center"></object>
-  			<object class="examplecircle4" align="center"></object>
+	  			<object class="examplesquare" align="center"></object>
+	  			<object class="exampleoval" align="center"></object>
+	  			<object class="examplecircle1" align="center"></object>
+	  			<object class="examplecircle2" align="center"></object>
+	  			<object class="examplecircle3" align="center"></object>
+	  			<object class="examplecircle4" align="center"></object>
   			</div>
   			<button id = "lets_go_to_name" class = "next"> Let's Go! >></button>
   		</div>
@@ -39,127 +41,71 @@
   		<div id = "choose_name" aria-live = "polite"> 
 	  		<h1 align = "center"> Basic Information </h1>
 			 <form style="position:absolute;left:50px">
+			 	<!-- Name Input -->
 	   			  <h2> Name </h2>
-				  <p>
-	   			  <label for="name1">First Name: </label>
-	   			  <input id="name1" placeholder="mitzy">
-	   		  	  </p>
-				  <p>
-	   			  <label for="name2">Family Name: </label>
-	   			  <input id="name2" placeholder="bubbles">
-	   		  	  </p>
+					  <p>
+			   			  <label for="name1">First Name: </label>
+			   			  <input id="name1" placeholder="mitzy">
+		   		  	  </p>
+					  <p>
+			   			  <label for="name2">Family Name: </label>
+			   			  <input id="name2" placeholder="bubbles">
+		   		  	  </p>
 			 </form>	 
+			 <!-- Gender Selection -->
 			 <form style="position:absolute;left:380px">
   				<h2> Gender </h2>
-				<!-- <p>
-					<input type="radio" id="male">
-					<label for="male">Male</label>
-				</p>
-				<p>
-  					<input type="radio" id="female">
-					<label for="female">Female</label>
-				</p>
-				<p>
-  					<input type="radio" id="nonbinary">
-					<label for="nonbinary">Nonbinary</label>
-				</p>
-				<p>
-					<input type="radio" id="other">
-					<label for="other">Other: </label>
-					<input type="text" id="other" placeholder="other">
-				</p> -->
-				<p>
-				<input type="radio" name="gender" /> Male <br/>
-				</p>
-
-				<p>
-				<input type="radio" name="gender" /> Female <br/>
-				</p>
-
-				<p>
-				<input type="radio" name="gender" /> Nonbinary <br/>
-				</p>
-
-				<p>
-				<input type="radio" name="gender" /> Other
-				<input type="text" id="other" placeholder="other">
-				</p>
+					<p> <input type="radio" name="gender" /> Male <br/> </p>
+					<p> <input type="radio" name="gender" /> Female <br/> </p>
+					<p> <input type="radio" name="gender" /> Nonbinary <br/> </p>
+					<p> <input type="radio" name="gender" /> Other
+						<input type="text" id="other" placeholder="other">
+					</p>
 			</form> 
+			 <!-- Pronoun Selection -->
 			 <form style="position:absolute;left:670px">
   				<h2> Pronouns </h2>
-				<!-- <p>
-					<input type="radio" id="he">
-					<label for="he">he/him/his</label>
-				</p>
-				<p>
-  					<input type="radio" id="she">
-					<label for="she">she/her/hers</label>
-				</p>
-				<p>
-  					<input type="radio" id="they">
-					<label for="they">they/them/theirs</label>
-				</p>
-				<p>
-					<input type="radio" id="other2">
-					<label for="other2">Other: </label>
-					<input type="text" id="other2" placeholder="other">
-				</p> -->
-				<p>
-				<input type="radio" name="pronoun" /> He/Him/His <br/>
-				</p>
-
-				<p>
-				<input type="radio" name="pronoun" /> She/Her/Hers <br/>
-				</p>
-
-				<p>
-				<input type="radio" name="pronoun" /> They/Them/Theirs <br/>
-				</p>
-
-				<p>
-				<input type="radio" name="pronoun" /> Other
-				<input type="text" id="other2" placeholder="other">
-				</p>
+	  				<p> <input type="radio" name="pronoun" /> He/Him/His <br/> </p>
+					<p> <input type="radio" name="pronoun" /> She/Her/Hers <br/> </p>
+					<p> <input type="radio" name="pronoun" /> They/Them/Theirs <br/> </p>
+					<p> <input type="radio" name="pronoun" /> Other
+						<input type="text" id="other2" placeholder="other">
+					</p>
 			</form>
+			<!-- Personality Attributes Input -->
 			<form style="position:absolute;left:950px">
 			  <h2> Personality </h2>
-			  <p>
-			  	<label for="hobby">Favorite Hobby: </label>
-			  	<input id="hobby" placeholder="video games">
-		  	  </p>
-			  <p>
-			  <label for="food">Favorite Food: </label>
-			  <input id="food" placeholder="ice cream">
-		  	  </p>
-			  <p>
-			  <label for="skill">Special Skill: </label>
-			  <input id="skill" placeholder="making chocolate milk">
-		  	  </p>
+				  <p>
+				  	<label for="hobby">Favorite Hobby: </label>
+				  	<input id="hobby" placeholder="video games">
+			  	  </p>
+				  <p>
+					  <label for="food">Favorite Food: </label>
+					  <input id="food" placeholder="ice cream">
+			  	  </p>
+				  <p>
+					  <label for="skill">Special Skill: </label>
+					  <input id="skill" placeholder="making chocolate milk">
+			  	  </p>
 			</form>
 	  		<button id = "lets_go_to_body" class = "next"> What do I look like? >></button>
   		</div>
   		
-  		<!-- Body Type -->
+  		<!-- Body Type Section-->
   		<div id = "choose_body" aria-live = "polite"> 
   			<h1 align = "center"> Appearance </h1>
 			<h2 align = "center"> Body Type (click the arrows to cycle) </h2>
 			<!-- button icon: https://commons.wikimedia.org/wiki/File:Chevron_right_font_awesome.svg -->
 			
-			<!-- <form style="position:absolute;left:300px;bottom:300">
-				<input type="image" src="arrow_left.png" id="body_arrow_left" width="50" height="50">
-			</form> -->
-			
+			<!-- Make this a button so that we can call it in the JS -->
 			<button id="right_arrow"><img src="arrow_right.png" width="50" height="50" class = "btn" ></button>
 			<button id="left_arrow"><img src="arrow_left.png" width="50" height="50" class = "btn"></button>
-
-			<!-- <form style="position:absolute;left:930px;bottom:300">
-				<input type="image" src="arrow_right.png" id="body_arrow_right" width="50" height="50">
-			</form> -->
 			
+			<!-- Next Button -->
   			<button id = "lets_go_to_clothes" class = "next">Let's get dressed >> </button>
-  			<button id = "back_to_basic" class = "back"> << Back </button>
+  			<!-- <button id = "back_to_basic" class = "back"> << Back </button> -->
 
-
+  			<!-- Make 2 seperate divs - one for each body type-->
   			<div id = "circle">
 				<object class="bodycircle" align="center" id = "circle"></object>
 				<object class="circlehead" align="center" id = "chead"></object>
@@ -170,76 +116,46 @@
 				<object class="squarehead" align="center" id = "shead"></object>
 			</div>
 
+		<!-- Limb Selection -->
 		 <form style="position:absolute;left:50px">
-			
 			<h2 align = "center"> Number of Limbs </h2>
-			<!-- <p>
-				<input type="radio" id="1">
-				<label for="1">one</label>
-			</p>
-			<p>
-				<input type="radio" id="2">
-				<label for="2">two</label>
-			</p>
-			<p>
-				<input type="radio" id="3">
-				<label for="3">three</label>
-			</p>
-			<p>
-				<input type="radio" id="4">
-				<label for="4">four</label>
-			</p> -->
-			<p>
-				<input type="radio" name="limbs" /> One (1)<br/>
-				</p>
-
-				<p>
-				<input type="radio" name="limbs" /> Two (2) <br/>
-				</p>
-
-				<p>
-				<input type="radio" name="limbs" /> Three (3) <br/>
-				</p>
-
-				<p>
-				<input type="radio" name="limbs" /> Four (4)
-				</p>
+				<p> <input type="radio" name="limbs" /> One (1)<br/> </p>
+				<p> <input type="radio" name="limbs" /> Two (2) <br/> </p>
+				<p>	<input type="radio" name="limbs" /> Three (3) <br/>	</p>
+				<p> <input type="radio" name="limbs" /> Four (4) </p>
 		</form>
+
+		<!-- Facial Features Selection -->
 		 <form style="position:absolute;left:1050px">
-			
 			<h2 align = "center"> Facial Features </h2>
-			<p>
-				<input type="radio" name="eye">
-				<label for="eye">Eye (1)</label>
-			</p>
-			<p>
-				<input type="radio" name = "eye">
-				<label for="eye_2">Eyes (2)</label>
-			</p>
-			<p>
-				<input type="checkbox" id="mouth">
-				<label for="mouth">Mouth</label>
-			</p>
-			<p>
-				<input type="checkbox" id="nose">
-				<label for="nose">Nose</label>
-			</p>
-			<p>
-				<input type="checkbox" id="ears">
-				<label for="ears">Ears</label>
-			</p>
+				<p>
+					<input type="radio" name="eye">
+					<label for="eye">Eye (1)</label>
+				</p>
+				<p>
+					<input type="radio" name = "eye">
+					<label for="eye_2">Eyes (2)</label>
+				</p>
+				<p>
+					<input type="checkbox" id="mouth">
+					<label for="mouth">Mouth</label>
+				</p>
+				<p>
+					<input type="checkbox" id="nose">
+					<label for="nose">Nose</label>
+				</p>
+				<p>
+					<input type="checkbox" id="ears">
+					<label for="ears">Ears</label>
+				</p>
 		</form>
 		
 		</div>
-	
-		<!-- <div id = "circle">
-			CIRCLE
-		</div> -->
 
   		<!-- Clothes -->
   		<div id = "choose_clothes" aria-live = "polite"> 
   			<h1 align = "center"> Clothing </h1>
-  			<button id = "back_to_body" class = "back"> << Back </button>
+  			<!-- <button id = "back_to_body" class = "back"> << Back </button> -->
   			<button id = "done_button" class = "next" accesskey="d">I'm all done!</button>
   		</div>
 
@@ -282,9 +198,7 @@
 		    <td>Help Page</td>
 		    <td>control + alt + /</td>
 		  </tr>
-
 		</table>
-  			
   		</div>
   	</div>
 
