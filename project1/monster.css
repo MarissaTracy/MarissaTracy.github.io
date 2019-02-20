@@ -101,8 +101,8 @@
 	background: purple;
 	border-radius: 50%;
 	position: absolute;
-	top: 40%;
-	left: 40%;
+	top: 43%;
+	left: 45%;
 }
 
 .bodysquare {
@@ -110,8 +110,8 @@
 	height: 200px;
 	background: #69e56b;
 	position: absolute;
-	top: 40%;
-	left: 40%;
+	top: 43%;
+	left: 45%;
  }
 
 .circlehead {
@@ -120,8 +120,8 @@
 	background: #8281e2;
 	border-radius: 50%;
 	position: absolute;
-	top: 27%;
-	left: 42%;
+	top: 30%;
+	left: 46.8%;
 }
 
 .squarehead {
@@ -129,8 +129,8 @@
 	height: 100px;
 	background: #f9bd3b;
 	position: absolute;
-	top: 27%;
-	left: 42%;
+	top: 30%;
+	left: 46.8%;
 }
 /*Navigation bar buttons*/
 .nav { 
@@ -210,12 +210,65 @@ table {
 
 #right_arrow {
 	position:absolute;
-	left:930px;
-	bottom: 350;
+	left:1050px;
+	bottom: 350px;
 }
 
 #left_arrow {
 	position:absolute;
-	left: 300px;
-	bottom: 350;
+	left: 450px;
+	bottom: 350px;
+}
+
+#arm_left {
+	position: absolute;
+	left:200px;
+	bottom:500px;
+}
+
+#arm_right {
+	position: absolute;
+	left:290px;
+	bottom:500px;
+}
+#leg_left {
+	position: absolute;
+	left:200px;
+	bottom:400px;
+}
+
+#leg_right {
+	position: absolute;
+	left:290px;
+	bottom:400px;
+}
+
+#antenna_btn {
+	position: absolute;
+	left: 220px;
+	bottom: 320px;
+}
+
+#eyes_tall {
+	position: absolute;
+	left: 220px;
+	bottom: 240px;
+}
+
+#mouth_tongue {
+	position: absolute;
+	left: 1300px;
+	bottom: 500px;
+}
+
+#dio_btn {
+	position: absolute;
+	left: 1290px;
+	bottom: 380px;
+}
+
+#sbsp_btn {
+	position: absolute;
+	left: 1300px;
+	bottom: 260px;
 }
