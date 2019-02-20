@@ -133,7 +133,7 @@ $("#start_over").click(function() {
 	$("#square").hide();
 });
 
-// Goes to page where design is displayed
+// Goes to page where design is displayed (done page)
 $("#done_button").click(function() { 
 	$("#start_over_page").show(); 
 	$("#welcome_page").hide(); 

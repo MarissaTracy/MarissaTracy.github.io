@@ -1,56 +1,98 @@
 .examplesquare {
-	width: 400px;
-	height: 400px;
+	width: 30%;
+	height: 50%;
 	background: lightblue;
-	position: absolute;
+	position: relative;
 	top: 25%;
 	left: 37%;
 }
+
+.examplesquare:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%; 
+}
+
+
 .exampleoval{
-	width: 250px;
-	height: 150px;
+	width: 15%;
+	height: 20%;
 	background: black;
 	border-radius: 100px / 50px;
-	position: absolute;
+	position: relative;
 	top: 38%;
-	left: 43%;
+	left: 14%;
+}
+
+.exampleoval:after{
+	content: "";
+	display: block;
+	padding-bottom: 100%;
 }
 
 .examplecircle1 {
-	width: 65px;
-	height: 70px;
+	width: 5%;
+	height: 9%;
 	background: white;
 	border-radius: 50%;
-	position: absolute;
+	position: relative;
 	top: 45%;
-	left: 47%;
+	left: 1.5%;
 }
+
+.examplecircle1:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
 .examplecircle2 {
-	width: 65px;
-	height: 70px;
+	width: 5%;
+	height: 9%;
 	background: white;
 	border-radius: 50%;
-	position: absolute;
+	position: relative;
 	top: 45%;
-	left: 51%;
+	left: 0%;
 }
+
+.examplecircle2:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
 .examplecircle3 {
-	width: 25px;
-	height: 35px;
+	width: 2%;
+	height: 4%;
 	background: black;
 	border-radius: 50%;
-	position: absolute;
-	top: 48%;
-	left: 52%;
+	position: relative;
+	top: 45%;
+	left: -4.2%;
 }
+
+.examplecircle3:after {
+	content: "";	
+	display: block;
+	padding-bottom: 100%;
+}
+
+
 .examplecircle4 {
-	width: 25px;
-	height: 35px;
+	width: 2%;
+	height: 4%;
 	background: black;
 	border-radius: 50%;
-	position: absolute;
-	top: 48%;
-	left: 49%;
+	position: relative;
+	top: 45%;
+	left: -11%;
+}
+
+.examplecircle4:after {
+	content: "";	
+	display: block;
+	padding-bottom: 100%;
 }
 
 .bodycircle {
