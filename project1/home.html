@@ -94,7 +94,8 @@
   		<!-- Body Type Section-->
   		<div id = "choose_body" aria-live = "polite"> 
   			<h1 align = "center"> Appearance </h1>
-			<h2 align = "center"> Body Type (click the arrows to cycle) </h2>
+			<h2 align = "center"> Body Type </h2>
+			<p align = "center"> Click the arrows to change body type, click the body parts to add/remove them. </p>
 			<!-- button icon: https://commons.wikimedia.org/wiki/File:Chevron_right_font_awesome.svg -->
 			
 			<!-- Make this a button so that we can call it in the JS -->
@@ -117,38 +118,65 @@
 			</div>
 
 		<!-- Limb Selection -->
-		 <form style="position:absolute;left:50px">
-			<h2 align = "center"> Number of Limbs </h2>
-				<p> <input type="radio" name="limbs" /> One (1)<br/> </p>
-				<p> <input type="radio" name="limbs" /> Two (2) <br/> </p>
-				<p>	<input type="radio" name="limbs" /> Three (3) <br/>	</p>
-				<p> <input type="radio" name="limbs" /> Four (4) </p>
-		</form>
+		<!--arm image: https://ya-webdesign.com/images/cartoon-arm-png.png -->
+		 <button id="arm_left"><img src="arm_left.png" width="50" height="80" class="btn"></button>
+		 <button id="arm_right"><img src="arm_right.png" width="50" height="80" class="btn"></button>
+		 
+		 <div id="left_arm">
+		 	<img src="arm_left.png" width="60" height="90" style="position:absolute; left:41%; bottom:40%">
+		 </div> 
+		 <div id="right_arm">
+		 	<img src="arm_right.png" width="60" height="90" style="position:absolute; left:55%; bottom:40%">
+		 </div>
+		 
+		 <!-- leg image: http://icons.iconarchive.com/icons/icons8/ios7/256/Sports-Leg-icon.png-->
+		 <button id="leg_left"><img src="leg_left.png" width="50" height="80" class="btn"></button>
+		 <button id="leg_right"><img src="leg_right.png" width="50" height="80" class="btn"></button>
+		 
+		 <div id="left_leg">
+		 	<img src="leg_left.png" width="60" height="90" style="position:absolute; left:44%; bottom:20%">
+		 </div> 
+		 <div id="right_leg">
+		 	<img src="leg_right.png" width="60" height="90" style="position:absolute; left:52.5%; bottom:20%">
+		 </div>
 
 		<!-- Facial Features Selection -->
-		 <form style="position:absolute;left:1050px">
-			<h2 align = "center"> Facial Features </h2>
-				<p>
-					<input type="radio" name="eye">
-					<label for="eye">Eye (1)</label>
-				</p>
-				<p>
-					<input type="radio" name = "eye">
-					<label for="eye_2">Eyes (2)</label>
-				</p>
-				<p>
-					<input type="checkbox" id="mouth">
-					<label for="mouth">Mouth</label>
-				</p>
-				<p>
-					<input type="checkbox" id="nose">
-					<label for="nose">Nose</label>
-				</p>
-				<p>
-					<input type="checkbox" id="ears">
-					<label for="ears">Ears</label>
-				</p>
-		</form>
+		
+		<!-- antenna image: http://www.clker.com/cliparts/I/E/C/t/i/O/totetude-bee-antenna-hi.png-->
+   		 <button id="antenna_btn"><img src="antenna.png" width="100" height="60" class="btn"></button>
+		 
+   		 <div id="antenna">
+   		 	<img src="antenna.png" width="100" height="60" style="position:absolute; left:47%; bottom:67%">
+   		 </div>
+		 
+ 		<!-- tall eyes image: ??-->
+    		 <button id="eyes_tall"><img src="eyes_tall.png" width="100" height="60" class="btn"></button>
+		 
+    		 <div id="tall_eyes">
+    		 	<img src="eyes_tall.png" width="90" height="50" style="position:absolute; left:47%; bottom:61%">
+    		 </div>
+			 
+ 		<!-- mouth tongue image: http://www.stickpng.com/assets/images/584c623d269a83097a7d04d2.png-->
+    		 <button id="mouth_tongue"><img src="mouth_tongue.png" width="80" height="40" class="btn"></button>
+		 
+    		 <div id="tongue_mouth">
+    		 	<img src="mouth_tongue.png" width="60" height="30" style="position:absolute; left:48%; bottom:58%">
+    		 </div>
+			 
+			 
+ 		<!-- dio image: https://t5.rbxcdn.com/e6fcfba669a6a0bee5f420f8ed493fd2-->
+    		 <button id="dio_btn"><img src="dio.png" width="100" height="100" class="btn"></button>
+		 
+    		 <div id="dio">
+    		 	<img src="dio.png" width="100" height="110" style="position:absolute; left:46.5%; bottom:56%">
+    		 </div>	 
+			 
+ 		<!-- spongebob image: https://i.kym-cdn.com/photos/images/original/001/390/979/f2a.png-->
+    		 <button id="sbsp_btn"><img src="sbsp.png" width="80" height="100" class="btn"></button>
+		 
+    		 <div id="sbsp">
+    		 	<img src="sbsp.png" width="110" height="140" style="position:absolute; left:46.5%; bottom:52%">
+    		 </div>	 
 		
 		</div>
 
