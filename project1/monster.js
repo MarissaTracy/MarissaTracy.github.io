@@ -179,29 +179,63 @@ $("#help").click(function() {
 });
 
 // Create JS function for each arrow
+var timesClickedRA = 0;
+var timesClickedLA = 0;
+
 $("#right_arrow").click(function() { 
-	$("#choose_body").show();
-	// Load either the square or cirlce body
-	$("#circle").show();
-	$("#welcome_page").hide(); 
-	$("#choose_name").hide();
-	$("#choose_clothes").hide();
-	$("#start_over_page").hide();
-	$("#help_page").hide();
-	$("#square").hide();
+	timesClickedRA++;
+	if(timesClickedRA == 1){
+		$("#choose_body").show();
+		// Load either the square or cirlce body
+		$("#circle").show();
+		$("#welcome_page").hide(); 
+		$("#choose_name").hide();
+		$("#choose_clothes").hide();
+		$("#start_over_page").hide();
+		$("#help_page").hide();
+		$("#square").hide();
+	}	
+	else{
+		timesClickedRA = 0;
+			$("#choose_body").show();
+		// Load the other body
+		$("#square").show();
+		// Hide other body
+		$("#circle").hide();
+		$("#welcome_page").hide(); 
+		$("#choose_name").hide();
+		$("#choose_clothes").hide();
+		$("#start_over_page").hide();
+		$("#help_page").hide();
+	}	
 });
 
 $("#left_arrow").click(function() { 
-	$("#choose_body").show();
-	// Load the other body
-	$("#square").show();
-	// Hide other body
-	$("#circle").hide();
-	$("#welcome_page").hide(); 
-	$("#choose_name").hide();
-	$("#choose_clothes").hide();
-	$("#start_over_page").hide();
-	$("#help_page").hide();
+	timesClickedLA++;
+	if(timesClickedLA == 1){
+		$("#choose_body").show();
+		// Load the other body
+		$("#square").show();
+		// Hide other body
+		$("#circle").hide();
+		$("#welcome_page").hide(); 
+		$("#choose_name").hide();
+		$("#choose_clothes").hide();
+		$("#start_over_page").hide();
+		$("#help_page").hide();
+	}	
+	else{
+		timesClickedLA = 0;
+		$("#choose_body").show();
+		// Load either the square or cirlce body
+		$("#circle").show();
+		$("#welcome_page").hide(); 
+		$("#choose_name").hide();
+		$("#choose_clothes").hide();
+		$("#start_over_page").hide();
+		$("#help_page").hide();
+		$("#square").hide();
+	}	
 });
 
 // JS function for legs and arms
@@ -245,7 +279,6 @@ $("#arm_right").click(function() {
 		// Load the other body
 		$("#right_arm").show();
 		// Hide other body
-		$("#circle").hide();
 		$("#welcome_page").hide(); 
 		$("#choose_name").hide();
 		$("#choose_clothes").hide();
@@ -258,7 +291,6 @@ $("#arm_right").click(function() {
 		// Load the other body
 		$("#right_arm").hide();
 		// Hide other body
-		$("#circle").hide();
 		$("#welcome_page").hide(); 
 		$("#choose_name").hide();
 		$("#choose_clothes").hide();
@@ -274,7 +306,6 @@ $("#leg_left").click(function() {
 		// Load the other body
 		$("#left_leg").show();
 		// Hide other body
-		$("#circle").hide();
 		$("#welcome_page").hide(); 
 		$("#choose_name").hide();
 		$("#choose_clothes").hide();
@@ -287,7 +318,6 @@ $("#leg_left").click(function() {
 		// Load the other body
 		$("#left_leg").hide();
 		// Hide other body
-		$("#circle").hide();
 		$("#welcome_page").hide(); 
 		$("#choose_name").hide();
 		$("#choose_clothes").hide();
@@ -303,7 +333,6 @@ $("#leg_right").click(function() {
 		// Load the other body
 		$("#right_leg").show();
 		// Hide other body
-		$("#circle").hide();
 		$("#welcome_page").hide(); 
 		$("#choose_name").hide();
 		$("#choose_clothes").hide();
@@ -316,7 +345,6 @@ $("#leg_right").click(function() {
 		// Load the other body
 		$("#right_leg").hide();
 		// Hide other body
-		$("#circle").hide();
 		$("#welcome_page").hide(); 
 		$("#choose_name").hide();
 		$("#choose_clothes").hide();
@@ -340,7 +368,6 @@ $("#antenna_btn").click(function() {
 		// Load the other body
 		$("#antenna").show();
 		// Hide other body
-		$("#circle").hide();
 		$("#welcome_page").hide(); 
 		$("#choose_name").hide();
 		$("#choose_clothes").hide();
@@ -353,7 +380,6 @@ $("#antenna_btn").click(function() {
 		// Load the other body
 		$("#antenna").hide();
 		// Hide other body
-		$("#circle").hide();
 		$("#welcome_page").hide(); 
 		$("#choose_name").hide();
 		$("#choose_clothes").hide();
@@ -369,7 +395,6 @@ $("#eyes_tall").click(function() {
 		// Load the other body
 		$("#tall_eyes").show();
 		// Hide other body
-		$("#circle").hide();
 		$("#welcome_page").hide(); 
 		$("#choose_name").hide();
 		$("#choose_clothes").hide();
@@ -382,7 +407,6 @@ $("#eyes_tall").click(function() {
 		// Load the other body
 		$("#tall_eyes").hide();
 		// Hide other body
-		$("#circle").hide();
 		$("#welcome_page").hide(); 
 		$("#choose_name").hide();
 		$("#choose_clothes").hide();
@@ -398,7 +422,6 @@ $("#mouth_tongue").click(function() {
 		// Load the other body
 		$("#tongue_mouth").show();
 		// Hide other body
-		$("#circle").hide();
 		$("#welcome_page").hide(); 
 		$("#choose_name").hide();
 		$("#choose_clothes").hide();
@@ -411,7 +434,6 @@ $("#mouth_tongue").click(function() {
 		// Load the other body
 		$("#tongue_mouth").hide();
 		// Hide other body
-		$("#circle").hide();
 		$("#welcome_page").hide(); 
 		$("#choose_name").hide();
 		$("#choose_clothes").hide();
@@ -427,7 +449,6 @@ $("#dio_btn").click(function() {
 		// Load the other body
 		$("#dio").show();
 		// Hide other body
-		$("#circle").hide();
 		$("#welcome_page").hide(); 
 		$("#choose_name").hide();
 		$("#choose_clothes").hide();
@@ -440,7 +461,6 @@ $("#dio_btn").click(function() {
 		// Load the other body
 		$("#dio").hide();
 		// Hide other body
-		$("#circle").hide();
 		$("#welcome_page").hide(); 
 		$("#choose_name").hide();
 		$("#choose_clothes").hide();
@@ -456,7 +476,6 @@ $("#sbsp_btn").click(function() {
 		// Load the other body
 		$("#sbsp").show();
 		// Hide other body
-		$("#circle").hide();
 		$("#welcome_page").hide(); 
 		$("#choose_name").hide();
 		$("#choose_clothes").hide();
@@ -469,7 +488,6 @@ $("#sbsp_btn").click(function() {
 		// Load the other body
 		$("#sbsp").hide();
 		// Hide other body
-		$("#circle").hide();
 		$("#welcome_page").hide(); 
 		$("#choose_name").hide();
 		$("#choose_clothes").hide();
