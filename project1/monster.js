@@ -197,7 +197,7 @@ $("#right_arrow").click(function() {
 	}	
 	else{
 		timesClickedRA = 0;
-			$("#choose_body").show();
+		$("#choose_body").show();
 		// Load the other body
 		$("#square").show();
 		// Hide other body
@@ -340,7 +340,7 @@ $("#leg_right").click(function() {
 		$("#help_page").hide();
 	}	
 	else{
-		timesClickedLL = 0;
+		timesClickedLR = 0;
 		$("#choose_body").show();
 		// Load the other body
 		$("#right_leg").hide();
@@ -429,7 +429,7 @@ $("#mouth_tongue").click(function() {
 		$("#help_page").hide();
 	}	
 	else{
-		timesClickedET = 0;
+		timesClickedMT = 0;
 		$("#choose_body").show();
 		// Load the other body
 		$("#tongue_mouth").hide();
