@@ -13,10 +13,11 @@
 
   	<!-- Navigation bar -->
  	<div align = "center">
+ 		<button id = "help" accesskey="q">?</button>
  		<button type="button" id = "lets_go_home" class = "nav" accesskey="h"> Home </button>
   		<button type="button" id = "lets_go_to_name_nav" class = "nav" accesskey="b"> Basic Information </button>
   		<button type="button" id = "lets_go_to_body_nav" class = "nav" accesskey="a"> Appearance</button>
-  		<button type="button" id = "lets_go_to_clothes_nav" class = "nav" accesskey="c"> Clothes</button>
+  		<!-- <button type="button" id = "lets_go_to_clothes_nav" class = "nav" accesskey="c"> Clothes</button> -->
  	</div>
 
  	<!-- Main Content -->
@@ -32,7 +33,7 @@
 	  			<object class="examplecircle2" align="center"></object>
 	  			<object class="examplecircle3" align="center"></object>
 	  			<object class="examplecircle4" align="center"></object>
-  			<button id = "lets_go_to_name" class = "next"> Let's Go! >></button>
+  			<button id = "lets_go_to_name" class = "next" accesskey="1"> Let's Go! >></button>
   		</div>
   		
   		<!-- Basic Information -->
@@ -86,7 +87,7 @@
 					  <input id="skill" placeholder="making chocolate milk">
 			  	  </p>
 			</form>
-	  		<button id = "lets_go_to_body" class = "next"> What do I look like? >></button>
+	  		<button id = "lets_go_to_body" class = "next" accesskey="2"> What do I look like? >></button>
   		</div>
   		
   		<!-- Body Type Section-->
@@ -97,11 +98,11 @@
 			<!-- button icon: https://commons.wikimedia.org/wiki/File:Chevron_right_font_awesome.svg -->
 			
 			<!-- Make this a button so that we can call it in the JS -->
-			<button id="right_arrow"><img src="arrow_right.png" width="50" height="50" class = "btn" ></button>
+			<button id="right_arrow"><img src="arrow_right.png" width="50" height="50" class = "btn" accesskey="b"></button>
 			<button id="left_arrow"><img src="arrow_left.png" width="50" height="50" class = "btn"></button>
 			
 			<!-- Next Button -->
-  			<button id = "lets_go_to_clothes" class = "next">Let's get dressed >> </button>
+  			<!-- <button id = "lets_go_to_clothes" class = "next">Let's get dressed >> </button> -->
   			<!-- <button id = "back_to_basic" class = "back"> << Back </button> -->
 
   			<!-- Make 2 seperate divs - one for each body type-->
@@ -117,8 +118,8 @@
 
 		<!-- Limb Selection -->
 		<!--arm image: https://ya-webdesign.com/images/cartoon-arm-png.png -->
-		 <button id="arm_left"><img src="arm_left.png" width="50" height="80" class="btn"></button>
-		 <button id="arm_right"><img src="arm_right.png" width="50" height="80" class="btn"></button>
+		 <button id="arm_left"><img src="arm_left.png" width="50" height="80" class="btn" accesskey="l"></button>
+		 <button id="arm_right"><img src="arm_right.png" width="50" height="80" class="btn" accesskey="r"></button>
 		 
 		 <div id="left_arm">
 		 	<img src="arm_left.png" width="60" height="90" style="position:absolute; left:41%; bottom:40%">
@@ -128,8 +129,8 @@
 		 </div>
 		 
 		 <!-- leg image: http://icons.iconarchive.com/icons/icons8/ios7/256/Sports-Leg-icon.png-->
-		 <button id="leg_left"><img src="leg_left.png" width="50" height="80" class="btn"></button>
-		 <button id="leg_right"><img src="leg_right.png" width="50" height="80" class="btn"></button>
+		 <button id="leg_left"><img src="leg_left.png" width="50" height="80" class="btn" accesskey="z"></button>
+		 <button id="leg_right"><img src="leg_right.png" width="50" height="80" class="btn" accesskey="x"></button>
 		 
 		 <div id="left_leg">
 		 	<img src="leg_left.png" width="60" height="90" style="position:absolute; left:44%; bottom:20%">
@@ -141,21 +142,21 @@
 		<!-- Facial Features Selection -->
 		
 		<!-- antenna image: http://www.clker.com/cliparts/I/E/C/t/i/O/totetude-bee-antenna-hi.png-->
-   		 <button id="antenna_btn"><img src="antenna.png" width="100" height="60" class="btn"></button>
+   		 <button id="antenna_btn"><img src="antenna.png" width="100" height="60" class="btn" accesskey="a"></button>
 		 
    		 <div id="antenna">
    		 	<img src="antenna.png" width="100" height="60" style="position:absolute; left:47%; bottom:67%">
    		 </div>
 		 
- 		<!-- tall eyes image: ??-->
-    		 <button id="eyes_tall"><img src="eyes_tall.png" width="100" height="60" class="btn"></button>
+ 		<!-- tall eyes image: https://cdn0.iconfinder.com/data/icons/cartoon-eyes/1000/eyes-eyeball-cartoon-watching-looking-013-512.png-->
+    		 <button id="eyes_tall"><img src="eyes_tall.png" width="100" height="60" class="btn" accesskey="e"></button>
 		 
     		 <div id="tall_eyes">
     		 	<img src="eyes_tall.png" width="90" height="50" style="position:absolute; left:47%; bottom:61%">
     		 </div>
 			 
  		<!-- mouth tongue image: http://www.stickpng.com/assets/images/584c623d269a83097a7d04d2.png-->
-    		 <button id="mouth_tongue"><img src="mouth_tongue.png" width="80" height="40" class="btn"></button>
+    		 <button id="mouth_tongue"><img src="mouth_tongue.png" width="80" height="40" class="btn" accesskey="t"></button>
 		 
     		 <div id="tongue_mouth">
     		 	<img src="mouth_tongue.png" width="60" height="30" style="position:absolute; left:48%; bottom:58%">
@@ -163,26 +164,77 @@
 			 
 			 
  		<!-- dio image: https://t5.rbxcdn.com/e6fcfba669a6a0bee5f420f8ed493fd2-->
-    		 <button id="dio_btn"><img src="dio.png" width="100" height="100" class="btn"></button>
+    		 <button id="dio_btn"><img src="dio.png" width="100" height="100" class="btn" accesskey="d"></button>
 		 
     		 <div id="dio">
     		 	<img src="dio.png" width="100" height="110" style="position:absolute; left:46.5%; bottom:56%">
     		 </div>	 
 			 
  		<!-- spongebob image: https://i.kym-cdn.com/photos/images/original/001/390/979/f2a.png-->
-    		 <button id="sbsp_btn"><img src="sbsp.png" width="80" height="100" class="btn"></button>
+    		 <button id="sbsp_btn"><img src="sbsp.png" width="80" height="100" class="btn" accesskey="s"></button>
 		 
     		 <div id="sbsp">
     		 	<img src="sbsp.png" width="110" height="140" style="position:absolute; left:46.5%; bottom:52%">
     		 </div>	 
-		
+			
+			<!-- <div>
+				<table style="width:60%">
+				  <tr>
+				    <th>Feature</th>
+				    <th>Mac Keyboard Shortcut</th> 
+				  </tr>
+				  <tr>
+				   <td>Change Body</td>
+				   <td>control + alt + b</td>
+				  </tr>
+				  <tr>
+				    <td>Left Arm</td>
+				    <td>control + alt + l</td>
+				  </tr>
+				  <tr>
+				    <td>Right Arm</td>
+				    <td>control + alt + r</td>
+				  </tr>
+				  <tr>
+				    <td>Left Leg</td>
+				    <td>control + alt + z</td>
+				  </tr>
+				  <tr>
+				    <td>Right Leg</td>
+				    <td>control + alt + x</td>
+				  </tr>
+				  <tr>
+				    <td>Antennas</td>
+				    <td>control + alt + a</td>
+				  </tr>
+				  <tr>
+				    <td>Tall Eyes</td>
+				    <td>control + alt + e</td>
+				  </tr>
+				  <tr>
+				   <td>Tongue</td>
+				   <td>control + alt + t</td>
+				  </tr>
+				  </tr>
+				   <tr>
+				   <td>Dio Face</td>
+				   <td>control + alt + d</td>
+				  </tr>
+				  </tr>
+				   <tr>
+				   <td>Spongebob Face</td>
+				   <td>control + alt + s</td>
+				  </tr>
+				</table>
+			</div> -->
 		</div>
 
   		<!-- Clothes -->
   		<div id = "choose_clothes" aria-live = "polite"> 
   			<h1 align = "center"> Clothing </h1>
+
   			<!-- <button id = "back_to_body" class = "back"> << Back </button> -->
-  			<button id = "done_button" class = "next" accesskey="d">I'm all done!</button>
+  			<!-- <button id = "done_button" class = "next" accesskey="d">I'm all done!</button> -->
   		</div>
 
   		<!-- Finished page -->
@@ -191,7 +243,7 @@
   			<button id = "start_over" class = "next"> Start Over </button>
   		</div>
 
-  		<button id = "help" accesskey="/">?</button>
+  		
   		<div id = "help_page">
 
   		<!-- Help page -->
@@ -206,23 +258,23 @@
 		  </tr>
 		  <tr>
 		    <td>Basic Information</td>
-		    <td>control + alt + b</td>
+		    <td>control + alt + 1</td>
 		  </tr>
 		  <tr>
 		    <td>Appearance</td>
-		    <td>control + alt + a </td>
+		    <td>control + alt + 2 </td>
 		  </tr>
-		  <tr>
+		 <!--  <tr>
 		    <td>Clothes</td>
 		    <td>control + alt + c</td>
 		  </tr>
 		  <tr>
 		    <td>Done Page</td>
 		    <td>control + alt + d</td>
-		  </tr>
+		  </tr> -->
 		  <tr>
 		    <td>Help Page</td>
-		    <td>control + alt + /</td>
+		    <td>control + alt + q</td>
 		  </tr>
 		</table>
   		</div>
