@@ -24,8 +24,8 @@
   	<div id = "content" role = "main">
   		<!-- Welcome Page -->
   		<div id = "welcome_page" aria-live = "polite"> 
-  			<h1 align = "center"> Welcome to character box! </h1>
-  			<p style="font-size:20px;" align="center"> Ready to unbox your character?</p>
+  			<h1 align = "center" style="font-size:3vw"> Welcome to character box! </h1>
+  			<p style="font-size:20px;" align="center" style="font-size:2vw"> Ready to unbox your character?</p>
   			<!-- Picture of character in box -->
 	  			<object class="examplesquare" align="center"></object>
 	  			<object class="exampleoval" align="center"></object>
@@ -38,51 +38,51 @@
   		
   		<!-- Basic Information -->
   		<div id = "choose_name" aria-live = "polite"> 
-	  		<h1 align = "center"> Basic Information </h1>
+	  		<h1 align = "center" style="font-size:3vw"> Basic Information </h1>
 			 <form style="position:absolute;left:50px">
 			 	<!-- Name Input -->
-	   			  <h2> Name </h2>
-					  <p>
+	   			  <h2 style="font-size:2vw"> Name </h2>
+					  <p style="font-size:1vw">
 			   			  <label for="name1">First Name: </label>
 			   			  <input id="name1" placeholder="mitzy">
 		   		  	  </p>
-					  <p>
+					  <p style="font-size:1vw">
 			   			  <label for="name2">Family Name: </label>
 			   			  <input id="name2" placeholder="bubbles">
 		   		  	  </p>
 			 </form>	 
 			 <!-- Gender Selection -->
 			 <form style="position:absolute;left:380px">
-  				<h2> Gender </h2>
-					<p> <input type="radio" name="gender" /> Male <br/> </p>
-					<p> <input type="radio" name="gender" /> Female <br/> </p>
-					<p> <input type="radio" name="gender" /> Nonbinary <br/> </p>
-					<p> <input type="radio" name="gender" /> Other
-						<input type="text" id="other" placeholder="other">
+  				<h2 style="font-size:2vw"> Gender </h2>
+					<p style="font-size:1vw"> <input type="radio" name="gender" /> Male <br/> </p>
+					<p style="font-size:1vw"> <input type="radio" name="gender" /> Female <br/> </p>
+					<p style="font-size:1vw"> <input type="radio" name="gender" /> Nonbinary <br/> </p>
+					<p style="font-size:1vw"> <input type="radio" name="gender" /> Other
+						<input type="text" id="other" placeholder="other" style="font-size:1vw">
 					</p>
 			</form> 
 			 <!-- Pronoun Selection -->
 			 <form style="position:absolute;left:670px">
-  				<h2> Pronouns </h2>
-	  				<p> <input type="radio" name="pronoun" /> He/Him/His <br/> </p>
-					<p> <input type="radio" name="pronoun" /> She/Her/Hers <br/> </p>
-					<p> <input type="radio" name="pronoun" /> They/Them/Theirs <br/> </p>
-					<p> <input type="radio" name="pronoun" /> Other
+  				<h2 style="font-size:2vw"> Pronouns </h2>
+	  				<p style="font-size:1vw"> <input type="radio" name="pronoun" /> He/Him/His <br/> </p>
+					<p style="font-size:1vw"> <input type="radio" name="pronoun" /> She/Her/Hers <br/> </p>
+					<p style="font-size:1vw"> <input type="radio" name="pronoun" /> They/Them/Theirs <br/> </p>
+					<p style="font-size:1vw"> <input type="radio" name="pronoun" /> Other
 						<input type="text" id="other2" placeholder="other">
 					</p>
 			</form>
 			<!-- Personality Attributes Input -->
 			<form style="position:absolute;left:950px">
-			  <h2> Personality </h2>
-				  <p>
+			  <h2 style="font-size:2vw"> Personality </h2>
+				  <p style="font-size:1vw">
 				  	<label for="hobby">Favorite Hobby: </label>
 				  	<input id="hobby" placeholder="video games">
 			  	  </p>
-				  <p>
+				  <p style="font-size:1vw">
 					  <label for="food">Favorite Food: </label>
 					  <input id="food" placeholder="ice cream">
 			  	  </p>
-				  <p>
+				  <p style="font-size:1vw">
 					  <label for="skill">Special Skill: </label>
 					  <input id="skill" placeholder="making chocolate milk">
 			  	  </p>
@@ -95,6 +95,7 @@
   			<h1 align = "center"> Appearance </h1>
 			<h2 align = "center"> Body Type </h2>
 			<p align = "center"> Click the arrows to change body type, click the body parts to add/remove them. </p>
+					
 			<!-- button icon: https://commons.wikimedia.org/wiki/File:Chevron_right_font_awesome.svg -->
 			
 			<!-- Make this a button so that we can call it in the JS -->
@@ -177,56 +178,24 @@
     		 	<img src="sbsp.png" width="110" height="140" style="position:absolute; left:46.5%; bottom:52%">
     		 </div>	 
 			
-			<!-- <div>
-				<table style="width:60%">
-				  <tr>
-				    <th>Feature</th>
-				    <th>Mac Keyboard Shortcut</th> 
-				  </tr>
-				  <tr>
-				   <td>Change Body</td>
-				   <td>control + alt + b</td>
-				  </tr>
-				  <tr>
-				    <td>Left Arm</td>
-				    <td>control + alt + l</td>
-				  </tr>
-				  <tr>
-				    <td>Right Arm</td>
-				    <td>control + alt + r</td>
-				  </tr>
-				  <tr>
-				    <td>Left Leg</td>
-				    <td>control + alt + z</td>
-				  </tr>
-				  <tr>
-				    <td>Right Leg</td>
-				    <td>control + alt + x</td>
-				  </tr>
-				  <tr>
-				    <td>Antennas</td>
-				    <td>control + alt + a</td>
-				  </tr>
-				  <tr>
-				    <td>Tall Eyes</td>
-				    <td>control + alt + e</td>
-				  </tr>
-				  <tr>
-				   <td>Tongue</td>
-				   <td>control + alt + t</td>
-				  </tr>
-				  </tr>
-				   <tr>
-				   <td>Dio Face</td>
-				   <td>control + alt + d</td>
-				  </tr>
-				  </tr>
-				   <tr>
-				   <td>Spongebob Face</td>
-				   <td>control + alt + s</td>
-				  </tr>
-				</table>
-			</div> -->
+			<div id = "help_table">
+			<p>
+				Mac Keyboard Shortcuts:
+				<ul>
+					<li>Change body: control + alt + b </li>
+					<li>Add/Remove left arm: control + alt + l </li>
+					<li>Add/Remove right arm: control + alt + r </li>
+					<li>Add/Remove left leg: control + alt + z </li>
+					<li>Add/Remove right leg: control + alt + x </li>
+					<li>Add/Remove antennas: control + alt + a </li>
+					<li>Add/Remove tall eyes: control + alt + e </li>
+					<li>Add/Remove tongue: control + alt + t </li>
+					<li>Add/Remove dio face: control + alt + d </li>
+					<li>Add/Remove spongebob face: control + alt + s </li>
+
+				</ul>
+			</p>
+			</div>
 		</div>
 
   		<!-- Clothes -->

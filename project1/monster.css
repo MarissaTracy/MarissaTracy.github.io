@@ -189,6 +189,13 @@
 	left: 30px;
 }
 
+#help_table {
+	position:absolute;
+	bottom:0px;
+}
+
+ul {color: grey; font-family: "Verdana", Sans-serif;}
+
 p {color: grey; font-family: "Verdana", Sans-serif;}
 
 input {color: grey; font-family: "Verdana", Sans-serif;}

@@ -8,6 +8,7 @@ $(document).ready(function() {
 	$("#help_page").hide();
 	$("#circle").hide();
 	$("#square").hide();
+	$("#help_table").hide()
 });
 
 // Show homepage when top navigation home button is clicked
@@ -20,6 +21,7 @@ $("#lets_go_home").click(function() {
 	$("#help_page").hide();
 	$("#circle").hide();
 	$("#square").hide();
+	$("#help_table").hide()
 });
 
 // Goes to basic information page when "lets go" button is clicked
@@ -32,6 +34,7 @@ $("#lets_go_to_name").click(function() {
 	$("#help_page").hide();
 	$("#circle").hide();
 	$("#square").hide();
+	$("#help_table").hide()
 });
 // Goes to basic information page when selected from navigation bar
 $("#lets_go_to_name_nav").click(function() { 
@@ -43,6 +46,7 @@ $("#lets_go_to_name_nav").click(function() {
 	$("#help_page").hide();
 	$("#circle").hide();
 	$("#square").hide();
+	$("#help_table").hide()
 });
 
 // goes to appearance tab when "next" button is clicked
@@ -57,7 +61,7 @@ $("#lets_go_to_body").click(function() {
 	$("#circle").hide();
 	// Show "default" body
 	$("#square").show();
-	
+	$("#help_table").show()
 	$("#left_arm").hide();
 	$("#right_arm").hide();
 	$("#left_leg").hide();
@@ -81,7 +85,7 @@ $("#lets_go_to_body_nav").click(function() {
 	$("#circle").hide();
 	// Show "default" body
 	$("#square").show();
-	
+	$("#help_table").show()
 	$("#left_arm").hide();
 	$("#right_arm").hide();
 	$("#left_leg").hide();
