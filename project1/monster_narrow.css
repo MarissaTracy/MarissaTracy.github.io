@@ -1,0 +1,284 @@
+.examplesquare {
+	width: 30%;
+	height: 50%;
+	background: lightblue;
+	position: relative;
+	top: 25%;
+	left: 37%;
+}
+
+.examplesquare:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%; 
+}
+
+
+.exampleoval{
+	width: 15%;
+	height: 20%;
+	background: black;
+	border-radius: 100px / 50px;
+	position: relative;
+	top: 38%;
+	left: 14%;
+}
+
+.exampleoval:after{
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+.examplecircle1 {
+	width: 5%;
+	height: 9%;
+	background: white;
+	border-radius: 50%;
+	position: relative;
+	top: 45%;
+	left: 1.5%;
+}
+
+.examplecircle1:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+.examplecircle2 {
+	width: 5%;
+	height: 9%;
+	background: white;
+	border-radius: 50%;
+	position: relative;
+	top: 45%;
+	left: 0%;
+}
+
+.examplecircle2:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+.examplecircle3 {
+	width: 2%;
+	height: 4%;
+	background: black;
+	border-radius: 50%;
+	position: relative;
+	top: 45%;
+	left: -4.2%;
+}
+
+.examplecircle3:after {
+	content: "";	
+	display: block;
+	padding-bottom: 100%;
+}
+
+
+.examplecircle4 {
+	width: 2%;
+	height: 4%;
+	background: black;
+	border-radius: 50%;
+	position: relative;
+	top: 45%;
+	left: -11%;
+}
+
+.examplecircle4:after {
+	content: "";	
+	display: block;
+	padding-bottom: 100%;
+}
+
+.bodycircle {
+	width: 100px;
+	height: 140px;
+	background: purple;
+	border-radius: 50%;
+	position: absolute;
+	top: 43%;
+	left: 45%;
+}
+
+.bodysquare {
+	width: 100px;
+	height: 140px;
+	background: #69e56b;
+	position: absolute;
+	top: 43%;
+	left: 44%;
+ }
+
+.circlehead {
+	width: 60px;
+	height: 60px;
+	background: #8281e2;
+	border-radius: 50%;
+	position: absolute;
+	top: 35%;
+	left: 46.8%;
+}
+
+.squarehead {
+	width: 60px;
+	height: 60px;
+	background: #f9bd3b;
+	position: absolute;
+	top: 35%;
+	left: 46.8%;
+}
+/*Navigation bar buttons*/
+.nav { 
+	width: 250px; 
+	height: 40px; 
+	background: lightgreen; 
+	color: darkgreen; 
+	margin: 5px;
+	font-size: 25px;
+	border-radius: 20px;
+	font-family: "Verdana", Sans-serif;
+}
+/*Next button on page*/
+.next { 
+	display: inline-block; 
+	background: lightgreen; 
+	text-align: center;
+	color: darkgreen; 
+	margin: 5px;
+	font-size: 25px;
+	border-radius: 10px;
+	font-family: "Verdana", Sans-serif;
+	position: absolute;
+	bottom: 100px;
+	left: 850px;
+}
+
+/*Back button on page*/
+.back { 
+	display: inline-block; 
+	background: lightgreen; 
+	text-align: center;
+	color: darkgreen; 
+	margin: 5px;
+	font-size: 25px;
+	border-radius: 10px;
+	font-family: "Verdana", Sans-serif;
+	position: absolute;
+	bottom: 100px;
+	left: 300px;
+}
+/*Help Button*/
+#help { 
+	display: inline-block; 
+	background: lightgreen; 
+	text-align: center;
+	color: darkgreen; 
+	margin: 5px;
+	font-size: 25px;
+	border-radius: 25px;
+	font-family: "Verdana", Sans-serif;
+	position: static;
+	height: 40px;
+	width: 40px;
+	top: 10px;
+	left: 30px;
+}
+
+#help_table {
+	position:absolute;
+	bottom:0px;
+}
+
+ul {color: grey; font-family: "Verdana", Sans-serif;}
+
+p {color: grey; font-family: "Verdana", Sans-serif;}
+
+input {color: grey; font-family: "Verdana", Sans-serif;}
+
+h2 {color: hotpink; font-family: "Verdana", Sans-serif;}
+
+h1 {color: black;font-family: "Verdana", Sans-serif;}
+
+form {
+	font-family: "Verdana", Sans-serif;
+}
+
+table {
+	font-family: "Verdana", Sans-serif;
+	color: black;
+	font-family: "Verdana", Sans-serif;
+	text-align: left;
+}
+
+#right_arrow {
+	position:absolute;
+	right: 180px;
+	bottom: 350px;
+}
+
+#left_arrow {
+	position:absolute;
+	left: 180px;
+	bottom: 350px;
+}
+
+#arm_left {
+	position: absolute;
+	left:0px;
+	bottom:450px;
+}
+
+#arm_right {
+	position: absolute;
+	left:90px;
+	bottom:450px;
+}
+#leg_left {
+	position: absolute;
+	left:0px;
+	bottom:360px;
+}
+
+#leg_right {
+	position: absolute;
+	left:90px;
+	bottom:360px;
+}
+
+#antenna_btn {
+	position: absolute;
+	left: 20px;
+	bottom: 290px;
+}
+
+#eyes_tall {
+	position: absolute;
+	left: 550px;
+	bottom: 240px;
+}
+
+#mouth_tongue {
+	position: absolute;
+	left: 550px;
+	bottom: 490px;
+}
+
+#dio_btn {
+	position: absolute;
+	width: 115px;
+	height: 90px;
+	left: 550px;
+	bottom: 390px;
+}
+
+#sbsp_btn {
+	position: absolute;
+	height: 60px;
+	left: 550px;
+	bottom: 320px;
+}
