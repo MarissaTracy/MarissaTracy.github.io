@@ -13,9 +13,16 @@ var rand_color = Math.floor(Math.random() * 6);
 var basket = Math.floor(Math.random() * 6);
 var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
 
+var e = window.event;
+
 // BASKET PARAMS
-var bx = 700; //Start in the middle
-var by = 710;
+var basket_loc = {x:0,y:0}; //basket's coordinates
+document.addEventListener("mousemove", getMouse);  //make it listen for the mouse location
+
+function getMouse(e){
+	basket_loc.x = e.pageX; //update the basket coordinates with the mouse's coordinates
+	basket_loc.y = e.pageY;
+}	
  
 function dropItem(){
     // Where the item appears
@@ -31,7 +38,7 @@ function dropItem(){
     //Draw the catcher
     canvas.beginPath();
     canvas.fillStyle=colors[basket];
-    canvas.arc(bx,by,35,0,Math.PI);
+    canvas.arc(basket_loc.x,basket_loc.y,35,0,Math.PI);
     canvas.closePath();
     canvas.fill();
 
@@ -53,11 +60,8 @@ function dropItem(){
       // change the position
     x = x;
     y += dy;
+
 }
 	
 
 setInterval(dropItem,10);
-
-
-
-
