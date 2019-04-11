@@ -1,23 +1,37 @@
 // Where things are being drawn
 var canvas;
-// speed
+// BALL PARAMS
 var dx = 3; //change back to .25 for the game
 var dy = 3; //change back to .25 for the game
-// start position..?
+// start position
 var y = 0;
 var x = Math.random() * 1400;
 var count = 0;
+// Ball color
 var rand_color = Math.floor(Math.random() * 6);
+// Basket Color
+var basket = Math.floor(Math.random() * 6);
 var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+
+// BASKET PARAMS
+var bx = 700; //Start in the middle
+var by = 710;
  
 function dropItem(){
     // Where the item appears
     canvas= myCanvas.getContext('2d');
     canvas.clearRect(0,0,1425,750);
-    canvas.beginPath();
     // Draw the circle
+    canvas.beginPath();
     canvas.fillStyle=colors[rand_color];
     canvas.arc(x,y,10,0,Math.PI*2);
+    canvas.closePath();
+    canvas.fill();
+
+    //Draw the catcher
+    canvas.beginPath();
+    canvas.fillStyle=colors[basket];
+    canvas.arc(bx,by,35,0,Math.PI);
     canvas.closePath();
     canvas.fill();
 
@@ -43,3 +57,7 @@ function dropItem(){
 	
 
 setInterval(dropItem,10);
+
+
+
+
