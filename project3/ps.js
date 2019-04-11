@@ -15,14 +15,68 @@ var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
 
 var e = window.event;
 
+var score = 0;
+var lives = 3;
+
+function drawScore() {
+    canvas.font = "24px Arial";
+    canvas.fillStyle = "#000000";
+    canvas.fillText("Score: "+ score, 8, 20);
+}
+
+function drawLives() {
+    canvas.font = "24px Arial";
+    canvas.fillStyle = "#000000";
+    canvas.fillText("Lives: "+ lives, 8, 40);
+}
+
+function gameOver(){
+  canvas.font = "48px Arial";
+  canvas.fillStyle = "#000000";
+  canvas.fillText("Game Over", 600, 350);
+  canvas.fillText("Final Score:" + score, 575, 400);
+}
+
 // BASKET PARAMS
 var basket_loc = {x:0,y:0}; //basket's coordinates
 document.addEventListener("mousemove", getMouse);  //make it listen for the mouse location
 
 function getMouse(e){
 	basket_loc.x = e.pageX; //update the basket coordinates with the mouse's coordinates
-	basket_loc.y = e.pageY;
+	basket_loc.y = 710;
 }	
+
+function getScore(){
+  var diffX = Math.abs(x - basket_loc.x); 
+  var diffY = Math.abs(y - basket_loc.y); 
+  if(diffX >= 0 && diffX <= 30 && diffY >= 0 && diffY <= 8 && basket == rand_color){
+    score = score + 10;
+    // window.alert("Yay!");
+    y = 740;
+    x = Math.random() * 1400; 
+  }
+  if(diffX >= 0 && diffX <= 30 && diffY >= 0 && diffY <= 8 && basket != rand_color){
+    score -= 10;
+    lives -= 1;
+    // window.alert("oops!");
+    y = 740;
+    x = Math.random() * 1400; 
+  }
+
+  if(y > 730 && diffX > 30 && (diffY > 0 || diffY > 8) && colors[basket] == colors[rand_color]) {
+    lives -= 1;
+    score -= 10;
+  }
+
+  if(lives == 0) {
+    gameOver();
+    x = -40;
+    y = -40;
+    dx = 0;
+    dy = 0;
+    }
+
+}
  
 function dropItem(){
     // Where the item appears
@@ -42,13 +96,6 @@ function dropItem(){
     canvas.closePath();
     canvas.fill();
 
-
-    // Check if it is in bounds
-    // If it is past the left or right side of the screen..
-    if( x<0 || x>1425){
-      // Reverse the speed of the ball, don't think we will need this...
-      dx=-dx;
-	  }  
     // If it is on the top of the screen or below the bottom
     if( y<0 || y>730){
       // Reverse the speed
@@ -61,13 +108,9 @@ function dropItem(){
     x = x;
     y += dy;
 	
-    var diffX = Math.abs(x - basket_loc.x); 
-    var diffY = Math.abs(y - basket_loc.y); 
-    if(diffX >= 0 && diffX <= 30 && diffY >= 0 && diffY <= 8){
-	window.alert("Yay!");
-    }
-
+    getScore();
+    drawScore();
+    drawLives();
 }
-	
 
 setInterval(dropItem,10);
