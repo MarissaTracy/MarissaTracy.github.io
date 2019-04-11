@@ -6,6 +6,7 @@ var dy = 3; //change back to .25 for the game
 // start position..?
 var y = 0;
 var x = Math.random() * 1400;
+var count = 0;
  
 function dropItem(){
     // Where the item appears
@@ -20,17 +21,24 @@ function dropItem(){
 
     // Check if it is in bounds
     // If it is past the left or right side of the screen..
-    if( x<0 || x>1425)
+    if( x<0 || x>1425){
       // Reverse the speed of the ball, don't think we will need this...
       dx=-dx;
+	}  
     // If it is on the top of the screen or below the bottom
-    if( y<0 || y>730)
+    if( y<0 || y>730){
       // Reverse the speed
       dy=-dy;
+	  y = 0;
+	  x = Math.random() * 1400; 
+	}  
       // change the position
       x = x;
       y += dy;
+	  
+	  
       
     }
+	
 
 setInterval(dropItem,10);
