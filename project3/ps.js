@@ -63,7 +63,7 @@ function dropItem(){
 	
     var diffX = Math.abs(x - basket_loc.x); 
     var diffY = Math.abs(y - basket_loc.y); 
-    if(diffX >= 0 && diffX <= 10 && diffY >= 0 && diffY <= 10){
+    if(diffX >= 0 && diffX <= 30 && diffY >= 0 && diffY <= 8){
 	window.alert("Yay!");
     }
 
