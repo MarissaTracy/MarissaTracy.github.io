@@ -30,6 +30,13 @@ function drawLives() {
     canvas.fillText("Lives: "+ lives, 8, 40);
 }
 
+function drawControls() {
+    canvas.font = "24px Arial";
+    canvas.fillStyle = "#000000";
+    canvas.fillText("Press P to move right", 8, 65);
+    canvas.fillText("Press Q to move left", 8, 90);
+}
+
 function gameOver(){
   canvas.font = "48px Arial";
   canvas.fillStyle = "#000000";
@@ -60,10 +67,11 @@ var basket_loc = {x:0,y:0}; //basket's coordinates
 // KEYBOARD CONTROL
 basket_loc.x = 200;
 basket_loc.y = 710;
+
 function handleEnter(e){    
-    var keycode = e.keyCode;
+    var keycode = e.key;
     // Enter Key
-    if (keycode == 13) {
+    if (keycode == "p") {
         // Move the basket a little to the right
         basket_loc.x += 25;
       // Keep the basket on the screen 
@@ -71,8 +79,8 @@ function handleEnter(e){
         basket_loc.x = 1390;
       }
     }
-    // Z key?
-    else if(keycode = '90') {
+    // Z key?	
+	else if (keycode == "q") {
       // Move the basket a little to the left
       basket_loc.x -= 25;
       // Keey the basket on the screen
@@ -81,6 +89,7 @@ function handleEnter(e){
       }
     }
 }
+
 
 function getScore(){
   var diffX = Math.abs(x - basket_loc.x); 
@@ -150,6 +159,7 @@ function dropItem(){
     getScore();
     drawScore();
     drawLives();
+	drawControls();
 }
 
 setInterval(dropItem,10);
