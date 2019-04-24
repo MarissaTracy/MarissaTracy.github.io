@@ -39,22 +39,61 @@ function gameOver(){
 
 // BASKET PARAMS
 var basket_loc = {x:0,y:0}; //basket's coordinates
-document.addEventListener("mousemove", getMouse);  //make it listen for the mouse location
 
-function getMouse(e){
-	basket_loc.x = e.pageX; //update the basket coordinates with the mouse's coordinates
-	basket_loc.y = 710;
-}	
+// MOUSE CONTROL
+// document.addEventListener("mousemove", getMouse);  //make it listen for the mouse location
+// function getMouse(e){
+// 	basket_loc.x = e.pageX; //update the basket coordinates with the mouse's coordinates
+// 	basket_loc.y = 710;
+// }	
+
+// document.addEventListener("switchcontrol", switchControl);  //make it listen for the mouse location
+// function switchControl(e) {
+//   basket_loc.y = 710;
+//   this.addEventListener('keypress', (e) => {
+//     if (e.keyCode == 13) {
+//         basket_loc.x = x;
+//     }
+//   })
+// }
+
+// KEYBOARD CONTROL
+basket_loc.x = 200;
+basket_loc.y = 710;
+function handleEnter(e){    
+    var keycode = e.keyCode;
+    // Enter Key
+    if (keycode == 13) {
+        // Move the basket a little to the right
+        basket_loc.x += 25;
+      // Keep the basket on the screen 
+      if (basket_loc.x > 1425) {
+        basket_loc.x = 1390;
+      }
+    }
+    // Z key?
+    else if(keycode = '90') {
+      // Move the basket a little to the left
+      basket_loc.x -= 25;
+      // Keey the basket on the screen
+      if (basket_loc.x < 0) {
+        basket_loc.x = 35;
+      }
+    }
+}
 
 function getScore(){
   var diffX = Math.abs(x - basket_loc.x); 
   var diffY = Math.abs(y - basket_loc.y); 
+  // Catch the ball
   if(diffX >= 0 && diffX <= 30 && diffY >= 0 && diffY <= 8 && basket == rand_color){
     score = score + 10;
     // window.alert("Yay!");
     y = 740;
     x = Math.random() * 1400; 
+    dy += .5; //Increate the speed of the falling object
   }
+  // Caught the wrong ball
   if(diffX >= 0 && diffX <= 30 && diffY >= 0 && diffY <= 8 && basket != rand_color){
     score -= 10;
     lives -= 1;
@@ -62,7 +101,7 @@ function getScore(){
     y = 740;
     x = Math.random() * 1400; 
   }
-
+  // Miss the ball
   if(y > 730 && diffX > 30 && (diffY > 0 || diffY > 8) && colors[basket] == colors[rand_color]) {
     lives -= 1;
     score -= 10;
