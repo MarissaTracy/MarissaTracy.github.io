@@ -33,8 +33,13 @@ function drawLives() {
 function drawControls() {
     canvas.font = "24px Arial";
     canvas.fillStyle = "#000000";
-    canvas.fillText("Press P to move right", 8, 65);
-    canvas.fillText("Press Q to move left", 8, 90);
+    canvas.fillText("Controls:", 8, 65);
+    canvas.fillText("Press P to move right", 8, 90);
+    canvas.fillText("Press Q to move left", 8, 115);
+    canvas.fillText("OR", 8, 140);
+    canvas.fillText("Use your mouse/trackpad", 8, 165);
+	
+	
 }
 
 function gameOver(){
@@ -48,21 +53,23 @@ function gameOver(){
 var basket_loc = {x:0,y:0}; //basket's coordinates
 
 // MOUSE CONTROL
-// document.addEventListener("mousemove", getMouse);  //make it listen for the mouse location
-// function getMouse(e){
-// 	basket_loc.x = e.pageX; //update the basket coordinates with the mouse's coordinates
-// 	basket_loc.y = 710;
-// }	
 
-// document.addEventListener("switchcontrol", switchControl);  //make it listen for the mouse location
-// function switchControl(e) {
-//   basket_loc.y = 710;
-//   this.addEventListener('keypress', (e) => {
-//     if (e.keyCode == 13) {
-//         basket_loc.x = x;
-//     }
-//   })
-// }
+
+document.addEventListener("mousemove", getMouse);  //make it listen for the mouse location
+function getMouse(e){
+ 	basket_loc.x = e.pageX; //update the basket coordinates with the mouse's coordinates
+ 	basket_loc.y = 710;
+}	
+
+document.addEventListener("switchcontrol", switchControl);  //make it listen for the mouse location
+function switchControl(e) {
+   basket_loc.y = 710;
+   this.addEventListener('keypress', (e) => {
+     if (e.keyCode == 13) {
+         basket_loc.x = x;
+     }
+   })
+}
 
 // KEYBOARD CONTROL
 basket_loc.x = 200;
@@ -73,7 +80,7 @@ function handleEnter(e){
     // Enter Key
     if (keycode == "p") {
         // Move the basket a little to the right
-        basket_loc.x += 25;
+        basket_loc.x += 65;
       // Keep the basket on the screen 
       if (basket_loc.x > 1425) {
         basket_loc.x = 1390;
@@ -82,7 +89,7 @@ function handleEnter(e){
     // Z key?	
 	else if (keycode == "q") {
       // Move the basket a little to the left
-      basket_loc.x -= 25;
+      basket_loc.x -= 65;
       // Keey the basket on the screen
       if (basket_loc.x < 0) {
         basket_loc.x = 35;
@@ -162,4 +169,4 @@ function dropItem(){
 	drawControls();
 }
 
-setInterval(dropItem,10);
+setInterval(dropItem,15);
