@@ -13,6 +13,8 @@ var rand_color = Math.floor(Math.random() * 6);
 var basket = Math.floor(Math.random() * 6);
 var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
 
+var gameOverBool = false;
+
 var e = window.event;
 
 var score = 0;
@@ -38,8 +40,40 @@ function drawControls() {
     canvas.fillText("Press Q to move left", 8, 115);
     canvas.fillText("OR", 8, 140);
     canvas.fillText("Use your mouse/trackpad", 8, 165);
-	
-	
+}
+
+function drawPokemon(ballColor, basketColor) {
+	var pokemon;
+	if (ballColor == "red"){
+		pokemon = "Charmander";
+	}
+	else if (ballColor == "blue"){
+		pokemon = "Squirtle";
+	}
+	else if (ballColor == "green"){
+		pokemon = "Bulbasaur";
+	}
+	else if (ballColor == "yellow"){
+		pokemon = "Pikachu";
+	}
+	else if (ballColor == "purple"){
+		pokemon = "Gengar";
+	}
+	else if (ballColor == "orange"){
+		pokemon = "Magikarp";
+	}
+	if (ballColor == basketColor && gameOverBool == false) {
+		canvas.font = "24px Arial";
+	    canvas.fillStyle = "#000000";
+	    canvas.fillText("A wild " + pokemon + " has appeared!", 500, 65);
+	    canvas.fillText("Catch it!", 600, 95);
+	}
+	else if (ballColor != basketColor && gameOverBool == false) {
+		canvas.font = "24px Arial";
+	    canvas.fillStyle = "#000000";
+	    canvas.fillText("A wild " + pokemon + " has appeared!", 500, 65);
+	    canvas.fillText("Run away!", 600, 95);
+	}
 }
 
 function gameOver(){
@@ -125,6 +159,7 @@ function getScore(){
 
   if(lives == 0) {
     gameOver();
+	gameOverBool = true;
     x = -40;
     y = -40;
     dx = 0;
@@ -134,7 +169,7 @@ function getScore(){
 }
  
 function dropItem(){
-    // Where the item appears
+	// Where the item appears
     canvas= myCanvas.getContext('2d');
     canvas.clearRect(0,0,1425,750);
     // Draw the circle
@@ -150,7 +185,10 @@ function dropItem(){
     canvas.arc(basket_loc.x,basket_loc.y,35,0,Math.PI);
     canvas.closePath();
     canvas.fill();
-
+	
+	drawPokemon(colors[rand_color], colors[basket]);
+	
+	
     // If it is on the top of the screen or below the bottom
     if( y<0 || y>730){
       // Reverse the speed
