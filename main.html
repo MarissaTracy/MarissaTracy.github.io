@@ -107,7 +107,7 @@
             <div class="col-12">
                 <div class="content-wrap">
                     <div class="entry-content">
-                        <p>Hi there, I'm Marissa.  I am currently a senior at the University of Colorado at Boulder.  I will have my Bachelor of Science in Computer Science on May 9th, 2019.  I am seeking a full-time position as a software developer or a database administrator.  My interests are in robotics, virtual/augmented reality, human-computer interaction, and accessibility.  I am very excited to start building technology that will shape our future and change the world.  I believe that by integrating virtual and augmented reality with robotics, we can solve many accessibility problems.</p>
+                        <p>Hi there, I'm Marissa.  I recieved my Bachelors of Science in Computer Science from the University of Colorado Boulder on May 9th, 2019.  I am seeking a full-time position as a software developer or a database administrator.  My interests are in robotics, virtual/augmented reality, human-computer interaction, and accessibility.  I am very excited to start building technology that will shape our future and change the world.  I believe that by integrating virtual and augmented reality with robotics, we can solve many accessibility problems.</p>
                     </div><!-- .entry-content -->
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -154,8 +154,11 @@
                     <div class="aboutprojects">
                         <p> 
 
-                            Our goal was to make Sparki reposses hot wheel cars.  We were able to control Sparki by using 6 different hand gestures.  We wrote computer vision algorithm in Python using OpenCV that was able to count the number of fingers. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est.
+                            Our goal was to make Sparki reposses hot wheel cars.  We were able to control Sparki by using 6 different hand gestures.  We wrote computer vision algorithm in Python using OpenCV that was able to count the number of fingers.  The 6 gestures corresponded to the following movements: stop, move forward, turn left, turn right, close gripper, and open gripper.  These 6 gestures allowed us to control Sparki to repossess cars.
 
+                            <br><br>
+
+                            To make the hand recognition algorithm, we used OpenCV in Python.  After we would read in the raw image, we would "mask" the image.  This turned the image into a binary version of the image so it just appeared in two colors - black or white.  After that, we were able to call the built in OpenCV functions "FindContours", "convexHull" and "convexityDefects" to help us calculate how many fingers were in the image.  The function that calculates the number of fingrs returns an integer.  This integer gets passed to our C code on Sparki as a byte over the serial.  This byte corresponds to a Sparki movement.
                         </p>
                     </div><!-- .entry-content -->
                 </div><!-- .content-wrap -->
@@ -176,7 +179,11 @@
 
                     <div class="aboutprojects">
                         <p> 
-                            Skin cancer is one of the most popular types of cancer, but it can be cured if it is caught early enough. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est.
+                            Skin cancer is one of the most popular types of cancer, but it can be cured if it is caught early enough.  Unfortunately, the human eye is not good at detecting skin cancer.  Because of this, there are many unnecessary biopsies performed every year.  By creating a neural network that learns to identify skin cancer, A.I. Dermatologist can help reduce the number of unnecessary biopsies performed each year while increasing the number of skin cancer cases caught.
+
+                            <br> <br>
+
+                            A.I. Dermatologist utilizes the <a href = "https://www.isic-archive.com/#!/topWithHeader/wideContentTop/main">ISIC dataset</a> of over 22,000 images to train a neural network to identify skin cancer.  
                         </p>
                     </div><!-- .entry-content -->
 
@@ -196,7 +203,10 @@
 
                     <div class="aboutprojects">
                         <p> 
-                            In Guardians of the Galaxy, Yondu is able to control his red arrow with his mind.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est.
+                            In Guardians of the Galaxy, Yondu is able to control his red arrow with his mind.  Whistler allows the user to step into Yondu's shoes and kill enemies with their own arrow.
+                            <br> <br>
+
+
                         </p>
                     </div><!-- .entry-content -->
                 </div><!-- .content-wrap -->
@@ -217,7 +227,11 @@
 
                     <div class="aboutprojects">
                         <p> 
-                            Every second approximately 6,000 tweets are tweeted. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est.
+                            Every second approximately 6,000 tweets are tweeted.  Many users tweet about current events, companies, and their personal lives.  ClutterSight is a web appication that allows a company or person to search for a keyword and ClutterSight searches all recent tweets for that keyword.  Then, ClutterSight categorizes each tweet as either "positive", "negative", or "neutral".  This data is displayed via a pie chart showing the user the percentage breakdown of the tweets.
+
+                            <br> <br>
+
+                            Each tweet was read in using Apache Storm.  This allowed the tweets to be categorized in real-time.  Each tweet was ran through a machine learning algorithm that assigned each tweet a sentiment and then stored the tweet and sentiment in a MySQL database.  The tweets were pulled from the database though a PHP script and updated the pie chart as new tweets came in or when the search criteria changed.
                         </p>
                     </div><!-- .entry-content -->
                 </div><!-- .content-wrap -->
