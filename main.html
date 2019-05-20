@@ -183,7 +183,7 @@
 
                             <br> <br>
 
-                            A.I. Dermatologist utilizes the <a href = "https://www.isic-archive.com/#!/topWithHeader/wideContentTop/main">ISIC dataset</a> of over 22,000 images to train a neural network to identify skin cancer.  
+                            A.I. Dermatologist utilizes the <a href = "https://www.isic-archive.com/#!/topWithHeader/wideContentTop/main">ISIC dataset</a> of over 22,000 images to train a neural network to identify skin cancer.  To expand the dataset, we augmented each image.  Each image was augmented three ways: flipped over the y-axis, rotated 90 degrees, and rotated 180 degrees.  Using OpenCV, the skin lesion was able to be identified in each image.  All the images were stored in different buckets on Amazon Web Services.  The use of AWS buckets allowed us to split the data up 34% training/66% testing.  The images were ran through a neural network that would classify a skin lesion as benign or malignant. 
                         </p>
                     </div><!-- .entry-content -->
 
@@ -203,8 +203,7 @@
 
                     <div class="aboutprojects">
                         <p> 
-                            In Guardians of the Galaxy, Yondu is able to control his red arrow with his mind.  Whistler allows the user to step into Yondu's shoes and kill enemies with their own arrow.
-                            <br> <br>
+                            In Guardians of the Galaxy, Yondu is able to control his red arrow with his mind.  Whistler is an Occulus game that allows the user to step into Yondu's shoes and kill enemies with their own arrow.  Each enemy randomly spawns in the scene and progressively moves closer to the user.  The arrow follows the users gaze and the user can either send the arrow away or bring it closer by using the left and right trigger of the occulus.  The game was created in Unity.  When the arrow collides with an enemy, a particle effect is applied to the enemy and it will explode into small cubes. 
 
 
                         </p>
