@@ -86,7 +86,7 @@ a:hover, a:active {
 .header-bar-text,
 .header-bar-email {
     font-size: 12px;
-    color: #afafaf;
+    color: #2f2f2f;
     text-transform: uppercase;
     letter-spacing: 0.08rem;
 }
@@ -103,7 +103,7 @@ a:hover, a:active {
 # Header Bar Email
 --------------------------------*/
 .header-bar-email a {
-    color: #afafaf;
+    color: #2f2f2f;
 }
 
 /*
@@ -130,7 +130,7 @@ a:hover, a:active {
 }
 
 .header-bar-social li a {
-    color: #bec4c9;
+    color: #2f2f2f;
     transition: all .35s;
 }
 
@@ -322,7 +322,7 @@ a:hover, a:active {
 .single-page .content-wrap {
     margin-top: 110px;
     text-align: center;
-    color: #afafaf;
+    color: #2f2f2f;
 }
 
 .single-page .content-wrap .posted-date {
@@ -344,7 +344,7 @@ a:hover, a:active {
 .single-page .content-wrap .tags-links a {
     margin-right: 15px;
     font-size: 16px;
-    color: #afafaf;
+    color: #2f2f2f;
 }
 
 .single-page .content-wrap .featured-image {
@@ -392,7 +392,7 @@ a:hover, a:active {
     padding: 0;
     margin: 30px 0 0;
     list-style: none;
-    color: #afafaf;
+    color: #2f2f2f;
 }
 
 .post-share label {
@@ -411,7 +411,7 @@ a:hover, a:active {
 }
 
 .post-share li a {
-    color: #afafaf;
+    color: #2f2f2f;
     transition: all 0.35s;
 }
 
