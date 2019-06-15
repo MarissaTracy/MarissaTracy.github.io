@@ -124,6 +124,29 @@
                             May 2019
                         </div><!-- .posted-date -->
 
+                        <h2 class="entry-title"><a href="https://github.com/dayander/2048-a11y" alt = "github repo for 2048 game"><i class="fa fa-github"></i></a> 2048 - a11y</h2>
+                
+                    </header><!-- .entry-header -->
+
+                    <figure class="featured-image">
+                            <img src="2048.png" alt="Game Board Comparison">
+                    </figure><!-- .featured-image -->
+
+                    <div class="aboutprojects">
+                        <p> 
+                            2048 is a popular tile game that was very popular back in 2014.  In this game, users swipe (or use arrow keys) to move all the tiles of the board in a direction.  Tiles of the same value merge together and add their values.  The goal of the game is to reach a 2048 tile by merging together tiles.  Users start with either a "2" or "4" tile and after every swipe (or keypress) a random "2" or "4" tile is added.  However, we found that this game was not accessible for many reasons.  <br>  <br>
+
+                            The color contrast in the game is not AA standards compliant.  For color contrast to be AA compliant, the foreground to background color contrast must be at least 4.5:1.  All of the color contrast between tile and tile and between tile and the number on the tile does not meet the standard.  To make the game more accessible, we updated the colors of the board to be AA contrast compliant.  We also added patterned backgrounds to the tiles so that they could be distinguished by people with monochromatic color blindness.  In addition to color contrast, we found that the game is not compatible with screen readers.  Becuase of this, the game is almost impossible to play with a screen reader because it does not allow users to know what number is in each cell.  To accomodate screen readers, we updated the layout of the game board from divs to an Aria table.  Now, screen readers are able to go into each row and box of the game board.  Try out our version of the game <a href = "https://a11y-2048.herokuapp.com/"> here! </a>
+                        </p>
+                    </div><!-- .entry-content -->
+                </div><!-- .content-wrap -->
+
+                <div class="content-wrap">
+                    <header class="entry-header">
+                        <div class="posted-date">
+                            May 2019
+                        </div><!-- .posted-date -->
+
                         <h2 class="entry-title"><a href="https://github.com/MarissaTracy/CSCI4448" alt = "github repo for object oriented project"><i class="fa fa-github"></i></a> QuizO</h2>
                     </header><!-- .entry-header -->
 
@@ -153,7 +176,7 @@
 
                     <div class="aboutprojects">
                         <p> 
-
+                            <br>
                             Our goal was to make Sparki reposses hot wheel cars.  We were able to control Sparki by using 6 different hand gestures.  We wrote computer vision algorithm in Python using OpenCV that was able to count the number of fingers.  The 6 gestures corresponded to the following movements: stop, move forward, turn left, turn right, close gripper, and open gripper.  These 6 gestures allowed us to control Sparki to repossess cars.
 
                             <br><br>
@@ -203,6 +226,7 @@
 
                     <div class="aboutprojects">
                         <p> 
+                            <br>
                             In Guardians of the Galaxy, Yondu is able to control his red arrow with his mind.  Whistler is an Occulus game that allows the user to step into Yondu's shoes and kill enemies with their own arrow.  Each enemy randomly spawns in the scene and progressively moves closer to the user.  The arrow follows the users gaze and the user can either send the arrow away or bring it closer by using the left and right trigger of the occulus.  The game was created in Unity.  When the arrow collides with an enemy, a particle effect is applied to the enemy and it will explode into small cubes. 
 
 

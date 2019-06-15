@@ -494,6 +494,7 @@ a:hover, a:active {
 .aboutme {
     margin-left: 300px;
     margin-right: 300px;
+    text-align: center;
 }
 
 .aboutprojects {
