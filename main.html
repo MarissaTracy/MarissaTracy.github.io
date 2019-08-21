@@ -136,7 +136,7 @@
                         <p> 
                             2048 is a popular tile game that was very popular back in 2014.  In this game, users swipe (or use arrow keys) to move all the tiles of the board in a direction.  Tiles of the same value merge together and add their values.  The goal of the game is to reach a 2048 tile by merging together tiles.  Users start with either a "2" or "4" tile and after every swipe (or keypress) a random "2" or "4" tile is added.  However, we found that this game was not accessible for many reasons.  <br>  <br>
 
-                            The color contrast in the game is not AA standards compliant.  For color contrast to be AA compliant, the foreground to background color contrast must be at least 4.5:1.  All of the color contrast between tile and tile and between tile and the number on the tile does not meet the standard.  To make the game more accessible, we updated the colors of the board to be AA contrast compliant.  We also added patterned backgrounds to the tiles so that they could be distinguished by people with monochromatic color blindness.  In addition to color contrast, we found that the game is not compatible with screen readers.  Because of this, the game is almost impossible to play with a screen reader because it does not allow users to know what number is in each cell.  To accommodate screen readers, we updated the layout of the game board from divs to an Aria table.  Now, screen readers are able to go into each row and box of the game board.  Try out our version of the game <a href = "https://a11y-2048.herokuapp.com/"> here! </a>
+                            The color contrast in the game is not AA standards compliant.  For color contrast to be AA compliant, the foreground to background color contrast must be at least 4.5:1.  The color contrast between tiles and between the tile and the number on the tile does not meet the standard.  To make the game more accessible, we updated the colors of the board to be AA contrast compliant.  We also added patterned backgrounds to the tiles so that they could be distinguished by people with monochromatic color blindness.  In addition to color contrast, we found that the game is not compatible with screen readers.  Because of this, the game is almost impossible to play with a screen reader because it does not allow users to know what number is in each cell.  To accommodate screen readers, we updated the layout of the game board from divs to an Aria table.  Now, screen readers are able to go into each row and box of the game board.  Try out our version of the game <a href = "https://a11y-2048.herokuapp.com/"> here! </a>
                         </p>
                     </div><!-- .entry-content -->
                 </div><!-- .content-wrap -->
@@ -156,9 +156,9 @@
 
                     <div class="aboutprojects">
                         <p> 
-                            Giving in class quizzes can be difficult and the difficulty only increases as class size increases.  Not only does it take time for teachers to manually grade all their students quizzes, but it leaves students in the dark about where they stand in class.  QuizO is an interactive web application that allows teachers to easily offer in class quizzes to students that provides immediate feedback. <br>  <br>
+                            Giving quizzes in class can be difficult and the difficulty only increases as class size increases.  Not only does it take time for teachers to manually grade all the quizzes, but it leaves students in the dark about where they stand in class.  QuizO is an interactive web application that allows teachers to easily offer quizzes to students that provide immediate feedback. <br>  <br>
 
-                            QuizO is a web application that allows teachers to give their students quiz from their web browser.  QuizO uses Django and a MySQL database.  There are two different types of users - a host and a student.  The host can able to create quizzes that multiple students can join via a unique ID number.  Each participant can optionally be aliased with a nickname of their choice.  Each player will be showed their answer after each question and given a total score after the quiz is completed. 
+                            QuizO is a web application that allows teachers to give their students quiz from their web browser.  QuizO uses Django and a MySQL database.  There are two different types of users - a host and a student.  The host can able to create quizzes that multiple students can join via a unique ID number.  Each participant can optionally be aliased with a nickname of their choice.  Each player will be shown their answer after each question and scored after the quiz is completed. 
                         </p>
                     </div><!-- .entry-content -->
                 </div><!-- .content-wrap -->
@@ -177,7 +177,7 @@
                     <div class="aboutprojects">
                         <p> 
                             <br>
-                            Our goal was to make Sparki repossess hot wheel cars.  We were able to control Sparki by using 6 different hand gestures.  We wrote computer vision algorithm in Python using OpenCV that was able to count the number of fingers.  The 6 gestures corresponded to the following movements: stop, move forward, turn left, turn right, close gripper, and open gripper.  These 6 gestures allowed us to control Sparki to repossess cars.
+                            Our goal was to make Sparki repossess hot wheel cars.  We were able to control Sparki by using 6 different hand gestures.  We wrote a computer vision algorithm in Python using OpenCV that is able to count the number of fingers in view.  The 6 gestures corresponded to the following movements: stop, move forward, turn left, turn right, close gripper, and open gripper.  These 6 gestures allowed us to control Sparki to repossess cars.
 
                             <br><br>
 
@@ -202,7 +202,7 @@
 
                     <div class="aboutprojects">
                         <p> 
-                            Skin cancer is one of the most popular types of cancer, but it can be cured if it is caught early enough.  Unfortunately, the human eye is not good at detecting skin cancer.  Because of this, there are many unnecessary biopsies performed every year.  By creating a neural network that learns to identify skin cancer, A.I. Dermatologist can help reduce the number of unnecessary biopsies performed each year while increasing the number of skin cancer cases caught.
+                            Skin cancer is one of the most common types of cancer, but it can be cured if it is caught early enough.  Unfortunately, the human eye is not good at detecting skin cancer.  Because of this, there are many unnecessary biopsies performed every year.  By creating a neural network that learns to identify skin cancer, A.I. Dermatologist can help reduce the number of unnecessary biopsies performed each year while improving skin cancer detection.
 
                             <br> <br>
 
@@ -250,7 +250,7 @@
 
                     <div class="aboutprojects">
                         <p> 
-                            Every second approximately 6,000 tweets are tweeted.  Many users tweet about current events, companies, and their personal lives.  ClutterSight is a web application that allows a company or person to search for a keyword and ClutterSight searches all recent tweets for that keyword.  Then, ClutterSight categorizes each tweet as either "positive", "negative", or "neutral".  This data is displayed via a pie chart showing the user the percentage breakdown of the tweets.
+                            Every second approximately 6,000 tweets are tweeted.  Many users tweet about current events, companies, and their personal lives.  ClutterSight is a web application that allows a company or person to search all recent tweets for a keyword.  ClutterSight categorizes all the tweets as either "positive", "negative", or "neutral".  This data is displayed via a pie chart showing the user the percentage breakdown of the tweets.
 
                             <br> <br>
 
@@ -277,7 +277,7 @@
                         <p>
                             There is nothing more frustrating then when you pick up a friend only for them to text you "give me 10 minutes" when you finally arrive.  To avoid the frustration, it is always temping to send them the "here" message when you are still a few minutes out.  Although everyone thinks that they will be fine to look down at their phone for 10 seconds to send the text message, the reality is that any distraction on the road could cause an accident.  ETHey eliminates the need to text and drive by automatically sending messages for users while they are driving. <br> <br>
 
-                            ETHey utilizes your phones GPS services to track your location as you drive.  You tell ETHey your destination, who you want to alert, and when.  ETHey will send messages based off of your location or your time of arrival - it's your choice!  ETHey also lets you set the message before you begin driving to eliminate any distractions behind the wheel.  If you are picking up multiple people, ETHey can help with that too.  Simply enter your route and ETHey will tell the next person when you are on the way.  ETHey was developed as an iOS Application using Swift and a MySQL database. 
+                            ETHey utilizes your phones GPS services to track your location as you drive.  You tell ETHey your destination, who you want to alert, and when.  ETHey will send messages based off of your location or your time of arrival - it's your choice!  ETHey allows you customize the message before you begin driving to eliminate any distractions behind the wheel.  If you are picking up multiple people, ETHey can help with that too.  Simply enter your route and ETHey will tell the next person when you are on the way.  ETHey was developed as an iOS Application using Swift and a MySQL database. 
 
                         </p>
                     </div><!-- .entry-content -->
