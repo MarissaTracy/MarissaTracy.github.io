@@ -41,3 +41,9 @@ table, th, td{
  	font-family: "arial-narrow";
 	/*text-align: center;*/
  }
+
+ .notes {
+ 	color: white;
+ 	font-family: "arial-narrow";
+	text-align: center;
+ }
