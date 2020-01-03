@@ -1,0 +1,43 @@
+body{
+	background-color: #000000
+}
+
+
+p {
+	font-family: "arial-narrow";
+	color: white;
+}
+
+.ctitle{ 
+	font-family: "arial-narrow";
+	text-align: center;
+ }
+
+ h1{
+ 	color: white;
+ 	font-family: "arial-narrow";
+	text-align: center;
+ }
+
+table, th, td{
+	color: white;
+	border-collapse: collapse;
+	border: 2px solid white;
+}
+
+.table_labels{
+ 	color: white;
+ 	font-family: "arial-narrow";
+	text-align: left;
+ }
+
+ .tab{
+ 	width: 25%;
+ 	width: 25%;
+ }
+
+ .tablab{
+ 	color: red;
+ 	font-family: "arial-narrow";
+	/*text-align: center;*/
+ }
